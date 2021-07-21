@@ -17,6 +17,12 @@ import { DefaultModule} from '@/layouts/default/default.module';
 import { SharedModule,ImportsMaterialModule} from '@/shared/shared.module';
 import { AuthModule } from './layouts/auth/auth.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+
+// import ngx-translate and the http loader
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +46,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     DefaultModule,
     AuthModule,
     FlexLayoutModule,
+
+    // ngx-translate and the loader module
+    TranslateModule.forRoot({
+        loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+        }
+    })
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
@@ -52,3 +67,7 @@ export class AppModule {
   chatName:string="Kim Amana";
 }
 
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http);
+}

@@ -1,17 +1,17 @@
 <div class="model-home">
   <div class="container">
     <div class="hea-top-main">
-      <h3>List Clairvoyant</h3>
+      <h3>{{ 'home.main.list_clairvoyants' | translate }}</h3>
       <div class="pull-right">
         <select (change)="changeFilter($event)">
-          <option value="categories">Choose Filter </option> 
-          <option value="categories">Categories </option>
-          <option value="name">Name </option>
-          <option value="age">Age </option>
-          <option value="languages">Languages </option>
+          <option value="categories">{{ 'home.main.choose_filter' | translate }}</option> 
+          <option value="categories">{{ 'home.main.categories' | translate }}</option>
+          <option value="name">{{ 'home.main.name' | translate }}</option>
+          <option value="age">{{ 'home.main.age' | translate }}</option>
+          <option value="languages">{{ 'home.main.languages' | translate }}</option>
         </select>
         <div class="search-filter">
-          <input type="text" name="" placeholder="Search" (keyup)="search($event)">
+          <input type="text" name="" placeholder="{{ 'home.main.search' | translate }}" (keyup)="search($event)">
           <button><i class="fa fa-search"></i></button>
         </div>
       </div>

@@ -50,6 +50,9 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import {MatDividerModule} from '@angular/material/divider';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import { PhotoSwipeModule} from '@/modules/photo-swipe/photo-swipe.module';
+
+import {TranslateModule} from "@ngx-translate/core";
+
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -189,8 +192,8 @@ export class ImportsMaterialModule {}
     ImageCropperModule,
     NgxIntlTelInputModule,
     NgxCaptchaModule,
-    PhotoSwipeModule
-
+    PhotoSwipeModule,
+    TranslateModule
   ],
   exports: [
     HeaderComponent,

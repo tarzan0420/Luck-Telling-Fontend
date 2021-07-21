@@ -1,0 +1,113 @@
+{
+    "navbar": {
+        "home": "Home",
+        "clairvoyants"  : "ClairVoyants",
+        "get_minutes"   : "Get Minutes",
+        "how_to_call"   : "How To Call",
+        "minutes"       : "Minutes",
+        "login"         : "Login",
+        "signup_user"   : "Signup User",
+        "signup_clairvoyant" : "Signup Clairvoyant",
+        "search"        : "Search",
+
+        "user" : {
+            "profile"           : "Profile",
+            "talk_history"      : "Talk History",
+            "message"           : "Message",
+            "change_password"   : "Change Password",
+            "log_out"           : "Log out"
+        }, 
+        
+        "clairvoyant" : {
+            "send_withdraw"     : "Send WithDraw",
+            "bank_account"      : "Bank Account",
+            "gallery"           : "Gallery"
+        },
+
+        "hi"            : "Hi!"
+    },
+
+    "topup" : {
+        "credit_card"   : "Credit Card",
+        "choose_amount" : "Choose your top-up amount:",
+        "credits"       : "Credits",
+        "description"   : "Top-ups are one-off and non-recurring. payment Powered by CCBill. All major cards accepted."
+    },
+
+    "home" : {
+        "main" : {
+            "list_clairvoyants" : "List Clairvoyant",
+            "choose_filter"     : "Choose Filter",
+            "categories"        : "Categories",
+            "name"  : "Name",
+            "age"   : "Age",
+            "languages" : "Languages",
+            "search"    : "Search"
+        },
+        "model" : {
+            "offline"   : "Offline",
+            "language"  : "Language:",
+            "busy"      : "Busy", 
+            "online"    : "Online"
+        },
+        "become" : {
+            "become_a"      : "Become a ",
+            "clairvoyant"   : "Clairvoyant",
+            "join_us_clairvoyant"   : "Join us as Clairvoyant",
+            "join_description"      : "Become a Clairvoyant. Talk with your client on phone, luck-telling.com is an exciting way to make good money from the comfort and safety of your home. All you need is a computer, a stable internet connection.",
+            "join_us"   : "JOIN US"
+        }
+    },
+
+    "footer" : {
+        "anonymous"             : "Anonymous, Safe & Secure",
+        "great_quality_audio"   : "Great Quality Audio",
+        "no_phone_charge"       : "No Phone Charges, Phone and Internet Calling, Worldwide Accessible",
+        "signup_now"            : "Sign up now for FREE !",
+        "static_page"           : "STATIC PAGE",
+        "e_newsletter"          : "E-NEWSLETTER",
+        "enter_email"           : "Enter your email",
+        "register"              : "REGISTER"
+    }, 
+
+    "login" : {
+        "enter_your_account"    : "Enter your account",
+        "email"     : "Email",
+        "password"  : "Password",
+        "login"     : "LOGIN",
+        "register"  : "REGISTER",
+        "forgot_your_password"  : "Forgot your password?",
+        "create_an_account"     : "Create An Account?",
+        "email_error"           : "Email is required",
+        "password_error"        : "Password is required"
+    },
+
+    "signup" : {
+        "enter_your_account"    : "ENTER YOUR ACCOUNT",
+        "first_name"            : "First Name",
+        "first_name_required"   : "First Name is required",
+        "last_name_required"    : "Last Name is required",
+        "email_format_error"    : "The format of the email address isn't correct",
+        "email_required"        : "The email is required",
+        "password_required"     : "Password is required",
+        "password_length_error_1" : "Password must be at least ",
+        "password_length_error_2" : " characters",
+        "password_match_error"  : "Pre-password must be same password",
+
+        "description1"  : "Fill in the form above", 
+        "description2"  : "Confirm your account from the activation email",
+        "description3"  : "Login, complete your user profile!",
+        "description4"  : "Get clients !",
+        "description5"  : "For Clairvoyant registration - ",
+        "description6"  : "please click here",
+        "description7"  : "If you have any questions, please",
+        "description8"  : "contact us",
+
+        "last_name"     : "Last Name",
+        "email"         : "Email",
+        "password"      : "Password",
+        "confirm_pwd"   : "Confirm Password",
+        "register"      : "REGISTER",
+        "cancel"        : "CANCEL"
+    }
+}

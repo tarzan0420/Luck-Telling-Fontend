@@ -5,6 +5,9 @@ import { SharedModule,ImportsMaterialModule} from '@/shared/shared.module';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {PipeModule} from '@/_pipe/pipe/pipe.module';
 import { LoginRoutingModule} from './login-routing.module'
+
+import {TranslateModule} from "@ngx-translate/core";
+
 @NgModule({
   declarations: [
   	LoginComponent
@@ -16,7 +19,8 @@ import { LoginRoutingModule} from './login-routing.module'
     SharedModule,
     CommonModule,
     FormsModule,
-    LoginRoutingModule
+    LoginRoutingModule,
+    TranslateModule
   ]
 })
 export class LoginModule { }

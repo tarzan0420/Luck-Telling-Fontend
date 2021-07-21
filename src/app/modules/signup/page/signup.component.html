@@ -1,52 +1,51 @@
 <app-navigation></app-navigation>
 <div class="signup-box">
   <div class="sign-box">
-    <h3>Enter your account</h3>
+    <h3>{{ 'signup.enter_your_account' | translate }}</h3>
     <div class="row">
       <div class="col-sm-7">
         <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
-            <label for="firstName">First Name</label>
+            <label for="firstName">{{ 'signup.first_name' | translate }}</label>
             <input mat-input type="text" formControlName="firstName" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
             <div *ngIf="submitted && f.firstName.invalid" class="invalid-feedback">
-              <mat-error *ngIf="f.firstName.errors.required">First Name is required</mat-error>
+              <mat-error *ngIf="f.firstName.errors.required">{{ 'signup.first_name_required' | translate }}</mat-error>
             </div>
           </div>
           <div class="form-group">
-            <label for="lastName">Last Name</label>
+            <label for="lastName">{{ 'signup.last_name' | translate }}</label>
             <input mat-input type="text" formControlName="lastName" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
             <div *ngIf="submitted && f.lastName.invalid" class="invalid-feedback">
-              <mat-error *ngIf="registerForm.controls['lastName'].errors?.required">Last Name is required</mat-error>
+              <mat-error *ngIf="registerForm.controls['lastName'].errors?.required">{{ 'signup.last_name_required' | translate }}</mat-error>
             </div>
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">{{ 'signup.email' | translate }}</label>
             <input mat-input type="text" formControlName="email" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
             <div *ngIf="submitted && registerForm.controls['email'].errors" class="invalid-feedback">
-              <mat-error *ngIf="registerForm.controls['email'].errors?.email">The format of the email address isn't
-                correct</mat-error>
-              <mat-error *ngIf="registerForm.controls['email'].errors?.required">The email is required</mat-error>
+              <mat-error *ngIf="registerForm.controls['email'].errors?.email">{{ 'signup.email_format_error' | translate }}</mat-error>
+              <mat-error *ngIf="registerForm.controls['email'].errors?.required">{{ 'signup.email_required' | translate }}</mat-error>
             </div>
           </div>
           <div class="form-group">
-            <label for="password">Password</label>
+            <label for="password">{{ 'signup.password' | translate }}</label>
             <input mat-input type="password" formControlName="password" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
             <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
-              <mat-error *ngIf="registerForm.controls['password'].errors?.required">Password is required</mat-error>
-              <mat-error *ngIf="registerForm.controls['password'].errors?.minlength">Password must be at least
-                {{passwordMinLength}} characters</mat-error>
+              <mat-error *ngIf="registerForm.controls['password'].errors?.required">{{ 'signup.password_required' | translate }}</mat-error>
+              <mat-error *ngIf="registerForm.controls['password'].errors?.minlength">{{ 'signup.password_length_error_1' | translate }}
+                {{passwordMinLength}} {{ 'signup.password_length_error_2' | translate }}</mat-error>
             </div>
           </div>
           <div class="form-group">
-            <label for="prePassword">Confirm Password</label>
+            <label for="prePassword">{{ 'signup.confirm_pwd' | translate }}</label>
             <input type="password" formControlName="prePassword" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && registerForm.errors }" />
             <div *ngIf="submitted && registerForm.hasError('notSame')" class="invalid-feedback">
-              <mat-error *ngIf="registerForm.hasError('notSame')">Pre-password must be same password</mat-error>
+              <mat-error *ngIf="registerForm.hasError('notSame')">{{ 'signup.password_match_error' | translate }}</mat-error>
             </div>
           </div>
 
@@ -56,21 +55,21 @@
             </ngx-recaptcha2>
             <button [disabled]="loading" class="btn btn-primary" (click)="onSubmit()">
               <span *ngIf="loading " class="spinner-border spinner-border-sm mr-1"></span>
-              Register
+              {{ 'signup.register' | translate }}
             </button>
-            <a routerLink="/login" class="btn btn-link">Cancel</a>
+            <a routerLink="/login" class="btn btn-link">{{ 'signup.cancel' | translate }}</a>
           </div>
         </form>
       </div>
       <div class="col-sm-5">
         <ul class="list-2">
-            <li>Fill in the form above</li>
-            <li>Confirm your account from the activation email</li>
-            <li>Login, complete your user profile!</li>
-            <li>Get clients !</li>
-            <li> For Clairvoyant registration - <a [routerLink]='["/register-model"]'>please click here</a></li>
+            <li>{{ 'signup.description1' | translate }}</li>
+            <li>{{ 'signup.description2' | translate }}</li>
+            <li>{{ 'signup.description3' | translate }}</li>
+            <li>{{ 'signup.description4' | translate }}</li>
+            <li>{{ 'signup.description5' | translate }} <a [routerLink]='["/register-model"]'>{{ 'signup.description6' | translate }}</a></li>
         </ul>
-        If you have any questions, please <a (click)="openContact()" href="javascript: return false;" style="color:#007bff">contact us</a>.
+        <li>{{ 'signup.description7' | translate }} <a (click)="openContact()" href="javascript: return false;" style="color:#007bff">{{ 'signup.description8' | translate }}</a>.
         <div class="img-details">
           
         </div>

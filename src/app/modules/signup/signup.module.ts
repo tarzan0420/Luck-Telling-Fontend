@@ -7,6 +7,8 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {PipeModule} from '@/_pipe/pipe/pipe.module';
 import { NgxCaptchaModule } from 'ngx-captcha';
 import { NgxIntlTelInputModule } from 'ngx-intl-tel-input'
+import { TranslateService } from '@ngx-translate/core';
+
 @NgModule({
   declarations: [
   	SignupComponent
@@ -20,7 +22,8 @@ import { NgxIntlTelInputModule } from 'ngx-intl-tel-input'
     ReactiveFormsModule,
     CommonModule,
     FormsModule,
-    SignupRoutingModule
+    SignupRoutingModule,
+    TranslateService
   ]
 })
 

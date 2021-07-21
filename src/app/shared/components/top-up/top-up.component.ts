@@ -9,6 +9,7 @@ import { environment } from 'environments/environment';
 import { User, Config } from '@/_models';
 import { Router } from '@angular/router';
 import { AppComponent} from '../../../app.component'
+
 declare const $: any;
 @Component({
   selector: 'app-top-up',

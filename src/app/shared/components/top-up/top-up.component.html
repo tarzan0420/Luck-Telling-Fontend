@@ -3,8 +3,8 @@
     <div class="row">
       <div class="col-sm-2">
         <div class="title-card">
-        <h3><i class="fa fa-credit-card"></i> Credit Card</h3>
-        Choose your top-up amount:
+        <h3><i class="fa fa-credit-card"></i>{{ 'topup.credit_card' | translate }}</h3>
+        {{ 'topup.choose_amount' | translate }}
         </div>
       </div>
       <div class="col-sm-6">
@@ -12,13 +12,13 @@
           <li *ngFor="let topup of listTopup">
             <!-- <a  href="{{ccbill+paymentSetting.accountNumber+'&clientSubacc='+paymentSetting.subAccount+'&formName='+topup.formName+'&formPrice='+topup.formPrice+'&user_id='+user.id+'&topupId='+topup._id}}" class="box-choose-card" > -->
               <a  href="{{ccbillPath+topup.flexformId+'?user_id='+user.id+'&topupId='+topup._id}}" class="box-choose-card" >
-              <span>{{config?.currency}}{{getPrice(topup.price)}}</span> ({{topup.token}} Credits)
+              <span>{{config?.currency}}{{getPrice(topup.price)}}</span> ({{topup.token}} {{ 'topup.credits' | translate}})
             </a>
           </li>
         </ul>
       </div>
       <div class="col-sm-4 text-right">
-        <p>Top-ups are one-off and non-recurring. payment Powered by CCBill. All major cards accepted.</p>
+        <p>{{ 'topup.description' | translate }}</p>
         <img src="assets/images/card.png">
       </div>
     </div>
@@ -30,21 +30,21 @@
       <div class="row">
         <div class="col-sm-2">
           <div class="title-card">
-          <h3><i class="fa fa-credit-card"></i> Credit Card</h3>
-          Choose your top-up amount:
+          <h3><i class="fa fa-credit-card"></i>{{ 'topup.credit_card' | translate }}</h3>
+          {{ 'topup.choose_amount' | translate }}
           </div>
         </div>
         <div class="col-sm-6">
           <ul class="list-card">
             <li *ngFor="let topup of listTopup">
               <a  [routerLink]="['/login']" class="box-choose-card" >
-                <span>{{config?.currency}}{{getPrice(topup.price)}}</span> ({{topup.token}} Credits)
+                <span>{{config?.currency}}{{getPrice(topup.price)}}</span> ({{topup.token}} {{ 'topup.credits' | translate }})
               </a>
             </li>
           </ul>
         </div>
         <div class="col-sm-4 text-right">
-          <p>Top-ups are one-off and non-recurring. payment Powered by CCBill. All major cards accepted.</p>
+          <p>{{ 'topup.description' | translate }}</p>
           <img src="assets/images/card.png">
         </div>
       </div>

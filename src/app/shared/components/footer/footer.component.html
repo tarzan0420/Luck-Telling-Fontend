@@ -4,24 +4,24 @@
       <div class="col-sm-5 logo">
         <img src="{{pageConfig.getLogo()}}">
         <div class="info-footer">
-          <p>Anonymous, Safe & Secure</p>
-          <p> Great Quality Audio</p>
-          <p>No Phone Charges, Phone and Internet Calling, Worldwide Accessible</p>
-          <a href="/sign-up" class="btn signup-footer_btn" style="border: 2px solid #fff;">Sign up now for FREE !</a>
+          <p>{{ 'footer.anonymous' | translate }}</p>
+          <p>{{ 'footer.great_quality_audio' | translate }}</p>
+          <p>{{ 'footer.no_phone_charge' | translate}}</p>
+          <a href="/sign-up" class="btn signup-footer_btn" style="border: 2px solid #fff;">{{ 'footer.signup_now' | translate }}</a>
         </div>
       </div>
       <div class="col-sm-3 list-menu">
-        <h3>STATIC PAGE</h3>
+        <h3>{{ 'footer.static_page' | translate }}</h3>
         <br>
         <ul class="none-list d-flex flex-column list_static-page">
           <li *ngFor="let pageItem of listStaticPage flex-fill"> <a href="/page/{{pageItem.slug}}">{{pageItem.title}}</a></li>
         </ul>
       </div>
       <div class="col-sm-4">
-        <h3>E-NEWSLETTER</h3>
+        <h3>{{ 'footer.e_newsletter' | translate }}</h3>
         <div class="form-newletter">
-          <input [(ngModel)]="emailNewsLetter"  type="text" placeholder="Enter your email" name="" style="color:#fff">
-          <button (click)="registerNewLetter()" class="btn btn-danger">REGISTER</button>
+          <input [(ngModel)]="emailNewsLetter"  type="text" placeholder="{{ 'footer.enter_email' | translate }}" name="" style="color:#fff">
+          <button (click)="registerNewLetter()" class="btn btn-danger">{{ 'footer.register' | translate }}</button>
         </div>
         <div class="social-media">
           <li><a href="{{pageConfig.fb}}"><i class="fa fa-facebook"></i></a></li>

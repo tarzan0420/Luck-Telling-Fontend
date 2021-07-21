@@ -11,6 +11,9 @@ import { Router} from '@angular/router';
 import { Subject} from 'rxjs';
 import {environment} from 'environments/environment'
 import { Location } from '@angular/common';
+
+import {TranslateService} from '@ngx-translate/core';
+
 declare var $:any;
 @Component({
   selector: 'app-navigation',
@@ -32,7 +35,10 @@ export class NavigationComponent implements OnInit {
 
   constructor(private authentication :AuthenticationService,
     private callService:CallService,private searchService:SearchService,private pageConfigService:PageconfigService,private location:Location,
-    private router:Router) { 
+    private router:Router,
+    public translate: TranslateService) { 
+      translate.setDefaultLang('en');
+
       this.searchTerm$.subscribe(inputData => {
       });
       this.searchService.search(this.searchTerm$).subscribe(results => {

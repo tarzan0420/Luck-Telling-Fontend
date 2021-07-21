@@ -22,15 +22,15 @@
       </ngb-rating>
       <span class="volume-model"><i class="fa fa-volume-up"></i></span>
     </div>
-    <div class="Language-model">LANGUAGE: {{model.languages}}</div>
+    <div class="Language-model">{{ 'home.model.language' | translate }} {{model.languages}}</div>
     <div *ngIf="model.isCalling == true || model.doNotDisturb  ;else notCalling">
-      <div class="btn-status off-online"><i class="fa fa-comments"></i> <span>Busy</span></div>
+      <div class="btn-status off-online"><i class="fa fa-comments"></i> <span>{{ 'home.model.busy' | translate }}</span></div>
     </div>
     <ng-template #notCalling>
       <div *ngIf="model.status == true ;else notActive" class="btn-status online"><i class="fa fa-comments"></i>
-        <span>ONLINE</span></div>
+        <span>{{ 'home.model.online' | translate }}</span></div>
       <ng-template #notActive>
-        <div class="btn-status off-online"><i class="fa fa-comments"></i> <span>OFFLINE</span></div>
+        <div class="btn-status off-online"><i class="fa fa-comments"></i> <span>{{ 'home.model.offline' | translate }}</span></div>
       </ng-template>
     </ng-template>
   </div>
@@ -59,15 +59,15 @@
     </ngb-rating>
     <span class="volume-model"><i class="fa fa-volume-up"></i></span>
   </div>
-  <div class="Language-model">LANGUAGE: {{model.languages}}</div>
+  <div class="Language-model">{{ 'home.model.language' | translate }} {{model.languages}}</div>
   <div *ngIf="model.isCalling == true || model.doNotDisturb  ;else notCalling">
-    <div class="btn-status off-online"><i class="fa fa-comments"></i> <span>Busy</span></div>
+    <div class="btn-status off-online"><i class="fa fa-comments"></i> <span>{{ 'home.model.busy' | translate }}</span></div>
   </div>
   <ng-template #notCalling>
     <div *ngIf="model.status == true ;else notActive" class="btn-status online"><i class="fa fa-comments"></i>
-      <span>ONLINE</span></div>
+      <span>{{ 'home.model.online' | translate }}</span></div>
     <ng-template #notActive>
-      <div class="btn-status off-online"><i class="fa fa-comments"></i> <span>OFFLINE</span></div>
+      <div class="btn-status off-online"><i class="fa fa-comments"></i> <span>{{ 'home.model.offline' | translate }}</span></div>
     </ng-template>
   </ng-template>
 </div>
@@ -96,15 +96,15 @@
     </ngb-rating>
     <span class="volume-model"><i class="fa fa-volume-up"></i></span>
   </div>
-  <div class="Language-model">LANGUAGE: {{model.languages}}</div>
+  <div class="Language-model">{{ 'home.model.language' | translate }} {{model.languages}}</div>
   <div *ngIf="model.isCalling == true || model.doNotDisturb  ;else notCalling">
-    <div class="btn-status off-online"><i class="fa fa-comments"></i> <span>Busy</span></div>
+    <div class="btn-status off-online"><i class="fa fa-comments"></i> <span>{{ 'home.model.busy' | translate }}</span></div>
   </div>
   <ng-template #notCalling>
     <div *ngIf="model.status == true ;else notActive" class="btn-status online"><i class="fa fa-comments"></i>
-      <span>ONLINE</span></div>
+      <span>{{ 'home.model.online' | translate }}</span></div>
     <ng-template #notActive>
-      <div class="btn-status off-online"><i class="fa fa-comments"></i> <span>OFFLINE</span></div>
+      <div class="btn-status off-online"><i class="fa fa-comments"></i> <span>{{ 'home.model.offline' | translate }}</span></div>
     </ng-template>
   </ng-template>
 </div>
