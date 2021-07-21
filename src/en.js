@@ -2,7 +2,7 @@
     window.__env = window.__env || {};
   
     // API url
-    window.__env.apiUrl = 'http://localhost:4000';
+    window.__env.apiUrl = 'https://luck-telling.com';
   
     // Whether or not to enable debug mode
     // Setting this to false will disable console output
