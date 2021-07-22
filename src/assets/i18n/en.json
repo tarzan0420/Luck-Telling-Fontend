@@ -268,5 +268,14 @@
         "offline"   : "Offline",
         "load_more" : "load more",
         "enter_message"     : "Enter Message"
+    }, 
+
+    "reset_password" : {
+        "change_password"   : "Change Password",
+        "old_password"      : "Old Password",
+        "password"          : "Password",
+        "confirm_password"  : "Re-enter password ",
+        "password_mismatch" : "Passwords do not match",
+        "save"              : "Save"
     }
 }

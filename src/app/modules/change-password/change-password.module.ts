@@ -5,6 +5,7 @@ import {ChangePasswordComponent} from './page/change-password.component';
 import { SharedModule,ImportsMaterialModule} from '@/shared/shared.module';
 import {PipeModule} from '@/_pipe/pipe/pipe.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [
   	ChangePasswordComponent
@@ -16,7 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    ChangePasswordRoutingModule
+    ChangePasswordRoutingModule,
+    TranslateModule
   ]
 })
 export class ChangePasswordModule { }
