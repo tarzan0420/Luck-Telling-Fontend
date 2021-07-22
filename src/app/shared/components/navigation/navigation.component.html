@@ -4,7 +4,8 @@
     <a [routerLink]='["/home"]'><img src="{{pageConfig.getLogo()}}"></a>
   </div>
   <a  class="toggle-menu" (click)="acitveToggleMenu=!acitveToggleMenu" [ngClass]="acitveToggleMenu?'active':'' "><i class="fa fa-bars"></i></a>
-  <div class="search-top">
+    
+  <div class="search-top">    
     <input type="text" name="" placeholder="Enter keyword" (keyup)="searchTerm$.next($event.target.value)"
     placeholder="{{ 'navbar.search' | translate }}">
     <button><i class="fa fa-search"></i></button>
@@ -44,6 +45,13 @@
     </ng-template>
     
     <ul class="nav-main">
+      <li style="display:block; padding-top:26px;">
+        <ngx-flag-picker
+          [selectedCountryCode]="selectedCountryCode"
+          [countryCodes]="countryCodes"
+          (changedCountryCode)="changeSelectedCountryCode($event)">
+        </ngx-flag-picker>
+      </li>
       <li ><a [routerLink]='["/home"]'>{{ 'navbar.home' | translate }}</a></li>
       <li ><a [routerLink]='["/models"]'>{{ 'navbar.clairvoyants' | translate }}</a></li>
       <li *ngIf="user && user.role == 'member' "><a [routerLink]='["/get-minutes"]' >{{ 'navbar.get_minutes' | translate }}</a></li>

@@ -33,18 +33,36 @@ export class NavigationComponent implements OnInit {
   @ViewChild('toggleMenu',{static:true}) toggleMenu:ElementRef;
   @ViewChild('rightHeader',{static:true}) rightHeader:ElementRef;
 
+
+  selectedCountryCode = 'us';
+  countryCodes = ['us', 'kw', 'de', 'es', 'fr', 'il', 'it', 'jp', 'nl', 'pt', 'ru', 'tr', 'pk', 'cn'];
+
+  changeSelectedCountryCode(value: string): void {
+    let selectedLanguageCode = 'en';
+    switch(value){
+      case 'us' : selectedLanguageCode = 'en'; break;
+      case 'kw' : selectedLanguageCode = 'ar'; break;
+      case 'il' : selectedLanguageCode = 'he'; break;
+      case 'jp' : selectedLanguageCode = 'ja'; break;
+      case 'pk' : selectedLanguageCode = 'ur'; break;
+      case 'cn' : selectedLanguageCode = 'zh'; break;
+      default : selectedLanguageCode = value; break;
+    }
+    this.translate.use(selectedLanguageCode);
+    console.log("selectedLanguageCode : ", selectedLanguageCode);
+  }
+  
   constructor(private authentication :AuthenticationService,
     private callService:CallService,private searchService:SearchService,private pageConfigService:PageconfigService,private location:Location,
     private router:Router,
     public translate: TranslateService) { 
 
-      this.translate.addLangs(['en', 'ru', 'fr']);
+      this.translate.addLangs(this.countryCodes);
       
       // Get Country Code
-      let langs = ['en', 'ru', 'fr'];
       var countryCode = Intl.DateTimeFormat().resolvedOptions().locale.substr(0,2);
       console.log("Country Code ", countryCode);
-      if (langs.indexOf(countryCode) > -1) {
+      if (this.countryCodes.indexOf(countryCode) > -1) {
         translate.setDefaultLang(countryCode);
       } else {
         translate.setDefaultLang('en');  

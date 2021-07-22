@@ -52,6 +52,7 @@ import { ImageCropperModule } from 'ngx-image-cropper';
 import { PhotoSwipeModule} from '@/modules/photo-swipe/photo-swipe.module';
 
 import {TranslateModule} from "@ngx-translate/core";
+import {NgxFlagPickerModule } from "ngx-flag-picker"
 
 import {
   MatAutocompleteModule,
@@ -193,7 +194,8 @@ export class ImportsMaterialModule {}
     NgxIntlTelInputModule,
     NgxCaptchaModule,
     PhotoSwipeModule,
-    TranslateModule
+    TranslateModule,
+    NgxFlagPickerModule
   ],
   exports: [
     HeaderComponent,
