@@ -5,6 +5,7 @@ import { SharedModule,ImportsMaterialModule} from '@/shared/shared.module';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {PipeModule} from '@/_pipe/pipe/pipe.module';
 import { EditProfileRoutingModule} from './edit-profile-routing.module'
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [
   	EditProfileComponent
@@ -16,7 +17,8 @@ import { EditProfileRoutingModule} from './edit-profile-routing.module'
     SharedModule,
     CommonModule,
     FormsModule,
-    EditProfileRoutingModule
+    EditProfileRoutingModule,
+    TranslateModule
   ]
 })
 export class EditProfileModule { }

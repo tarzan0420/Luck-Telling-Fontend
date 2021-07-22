@@ -67,7 +67,13 @@
         "static_page"           : "STATIC PAGE",
         "e_newsletter"          : "E-NEWSLETTER",
         "enter_email"           : "Enter your email",
-        "register"              : "REGISTER"
+        "register"              : "REGISTER",
+
+        "terms_coditions"       : "Terms & Conditions",
+        "acceptable_policy"     : "Acceptable Use Policy",
+        "record_compaliance"    : "Record Keeping Compliance",
+        "faq"                   : "FAQs",
+        "how_to_call"           : "How to call"
     }, 
 
     "login" : {
@@ -192,5 +198,49 @@
         "answer"            : "Answer",
         "calling"           : "calling",
         "time_remaining"    : "Time remaining:"
+    },
+
+    "profile" : {
+        "first_name"    :"First Name",
+        "last_name"     : "Last Name",
+        "avatar_upload" : "Avatar Upload",
+        "save"          : "Save",
+        "avatar_warning": "*Please upload image of dimension 350px*450px",
+        "dont_disturb"  : "Do Not Disturb!",
+        "audio_upload"  : "Audio Upload",
+        "upload"        : "Upload",
+        "biography"     : "Biography",
+        "gender"        : "Gender:",
+        "gender_label"  : "Gender",
+        "orientation"   : "Orientation:",
+        "orientation_label"  : "Orientation",
+        "orientation_required" : "Orientation is required",
+        "age"           : "Age:",
+        "age_label"     : "Age",
+        "age_placeholder"   : "Ex. 18",
+        "age_range_error"   : "Age must be between 80 and 18",
+        "age_required"      : "Age is required",
+        "languages"          : "Languages:",
+        "languages_label"    : "Languages",
+        "language_placeholder" : "Ex . ENGLISH, HINDI, JAPAN",
+        "about_me"              : "About me",
+        "about_length_error"    : "About is have max length is ",
+        "interests"                     : "Interests:",
+        "interests_placeholder"         : "Interests",
+        "interests_length_error"        : "Interests is have max length is ",
+        "specialities"                  : "Specialities:",
+        "specialities_placeholder"      : "Specialities",
+        "specialities_length_error"     : "Specialitie is have max length is ",
+        "category"                      : "Category:",
+        "category_label"                : "Category",
+        "male"      : "Male",
+        "female"    : "Female",
+        "couples"   : "Couples",
+        "contact_us"        : "Contact Us",
+        "base_city"         : "Base city:",
+        "city_label"        : "City",
+        "city_placeholder"  : "Ex. Chicago IL",
+        "city_required"     : "City is required",
+        "phone_number"      : "Phone Number"
     }
 }

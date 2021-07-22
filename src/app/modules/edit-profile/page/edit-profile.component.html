@@ -8,12 +8,12 @@
         <a class="edit" (click)="editName()"><i class="fa fa-pencil"></i></a>
       </div>
       <div class="name-left d-flex" *ngIf='editFullName' [formGroup]="proflieFormGroup">
-        <input matInput formControlName="fristNameFormControl" [errorStateMatcher]="matcher" placeholder="Frist Name"
+        <input matInput formControlName="fristNameFormControl" [errorStateMatcher]="matcher" placeholder="{{ 'profile.first_name' | translate }}"
           [(ngModel)]="user.firstName">
-        <input matInput formControlName="lastNameFormControl" [errorStateMatcher]="matcher" placeholder="Last Name"
+        <input matInput formControlName="lastNameFormControl" [errorStateMatcher]="matcher" placeholder="{{ 'profile.last_name' | translate }}"
           [(ngModel)]="user.lastName">
         <button [disabled]="loading" mat-raised-button color="accent" (click)="changeFullName()"
-          ngclass="btn btn-danger btn-sm">Save</button>
+          ngclass="btn btn-danger btn-sm">{{ 'profile.save' | translate }}</button>
       </div>
       <div class="phone-right">
 
@@ -31,42 +31,41 @@
           (cropperReady)="cropperReady()" (loadImageFailed)="loadImageFailed()">
         </image-cropper> 
         </div>      
-        <h5>Avatar Upload</h5>
+        <h5>{{ 'profile.avatar_upload' | translate }}</h5>
         <input class="btn btn-danger btn-block upload-btn" type="file" name="image" (change)="fileProgress($event)"
           accept="image/x-png,image/gif,image/jpeg">
-        <p class="alert alert-warning">*Please upload image of dimension 350px*450px</p>
+        <p class="alert alert-warning">{{ 'profile.avatar_warning' | translate }}</p>
         <div class="doNotDisturb" *ngIf="user.role == 'model'">
-          <mat-slide-toggle *ngIf="user.doNotDisturb;else notdoNotDisturb" [(ngModel)]="user.doNotDisturb" checked>Do
-            Not Disturb!</mat-slide-toggle>
+          <mat-slide-toggle *ngIf="user.doNotDisturb;else notdoNotDisturb" [(ngModel)]="user.doNotDisturb" checked>{{ 'profile.dont_disturb' | translate }}</mat-slide-toggle>
           <ng-template #notdoNotDisturb>
-            <mat-slide-toggle [(ngModel)]="user.doNotDisturb">Do Not Disturb!</mat-slide-toggle>
+            <mat-slide-toggle [(ngModel)]="user.doNotDisturb">{{ 'profile.dont_disturb' | translate }}</mat-slide-toggle>
           </ng-template>
         </div>
         <div class="audio-detail" *ngIf="user.role == 'model'">
           <audio src="{{user.audioUrl}}" controls></audio>
         </div>
-        <h5 *ngIf="user.role == 'model'">Audio Upload</h5>
+        <h5 *ngIf="user.role == 'model'">{{ 'profile.audio_upload' | translate }}</h5>
         <button *ngIf="user.role == 'model'" mat-raised-button color="accent" (click)="openUploadAudio()"
-          ngclass="btn btn-danger btn-sm">Upload</button>
+          ngclass="btn btn-danger btn-sm">{{ 'profile.upload' | translate }}</button>
 
       </div>
       <div class="col-sm-8">
         <form [formGroup]="proflieFormGroup">
           <div class="title-1">
-            <h3>Biography</h3>
+            <h3>{{ 'profile.biography' | translate }}</h3>
             <div class="pull-right">
               <button [disabled]="loading" mat-raised-button color="accent" (click)="onSubmit()"
-                ngclass="btn btn-danger btn-sm">Save</button>
+                ngclass="btn btn-danger btn-sm">{{ 'profile.save' | translate }}</button>
             </div>
           </div>
           <div class="content-1">
             <div class="row form-edit">
               <div class="col-sm-6">
                 <div class="form-group row">
-                  <label class="col-sm-5">Gender:</label>
+                  <label class="col-sm-5">{{ 'profile.gender' | translate }}</label>
                   <div class="col-sm-7">
                     <mat-form-field appearance="fill">
-                      <mat-label>Gender</mat-label>
+                      <mat-label>{{ 'profile.gender_label' | translate }}</mat-label>
                       <mat-select [(value)]="user.gender">
                         <mat-option *ngFor="let item of genders" [value]="item.value">
                           {{ item.name }}
@@ -78,14 +77,14 @@
               </div>
               <div class="col-sm-6">
                 <div class="form-group row">
-                  <label class="col-sm-5">Orientation:</label>
+                  <label class="col-sm-5">{{ 'profile.orientation' | translate }}</label>
                   <div class="col-sm-7">
                     <mat-form-field class="example-full-width">
-                      <mat-label>Orientation</mat-label>
+                      <mat-label>{{ 'profile.orientation_label' | translate }}</mat-label>
                       <input matInput formControlName="orientationFormControl" [errorStateMatcher]="matcher"
                         placeholder="" [(ngModel)]="user.orientation">
                       <mat-error *ngIf="orientationFormControl.hasError('required')">
-                        Orientation is <strong>required</strong>
+                        {{ 'profile.orientation_required' | translate }}
                       </mat-error>
                     </mat-form-field>
                   </div>
@@ -93,18 +92,18 @@
               </div>
               <div class="col-sm-6">
                 <div class="form-group row">
-                  <label class="col-sm-5">Age:</label>
+                  <label class="col-sm-5">{{ 'profile.age' | translate }}</label>
                   <div class="col-sm-7">
                     <mat-form-field class="example-full-width">
-                      <mat-label>Age</mat-label>
+                      <mat-label>{{ 'profile.age_label' | translate }}</mat-label>
                       <input type="number" matInput formControlName="ageFormControl" [(ngModel)]="user.age"
-                        [errorStateMatcher]="matcher" placeholder="Ex. 18">
+                        [errorStateMatcher]="matcher" placeholder="{{ 'profile.age_placeholder' | translate }}">
                       <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
                       <mat-error *ngIf="ageFormControl.hasError('min') && !ageFormControl.hasError('required')">
-                        Age must be between 80 and 18
+                        {{ 'profile.age_range_error' | translate }}
                       </mat-error>
                       <mat-error *ngIf="ageFormControl.hasError('required')">
-                        Age is <strong>required</strong>
+                        {{ 'profile.age_required' | translate }}
                       </mat-error>
                     </mat-form-field>
                   </div>
@@ -112,12 +111,12 @@
               </div>
               <div class="col-sm-6">
                 <div class="form-group row">
-                  <label class="col-sm-5">Languages:</label>
+                  <label class="col-sm-5">{{ 'profile.languages' | translate }}</label>
                   <div class="col-sm-7">
                     <mat-form-field class="example-full-width">
-                      <mat-label>Languages</mat-label>
+                      <mat-label>{{ 'profile.languages_label' | translate }}</mat-label>
                       <input matInput formControlName="languagesFormControl" [errorStateMatcher]="matcher"
-                        placeholder="Ex . ENGLISH, HINDI, JAPAN" [(ngModel)]="user.languages">
+                        placeholder="{{ 'profile.languages_required' | translate }}" [(ngModel)]="user.languages">
                     </mat-form-field>
                   </div>
                 </div>
@@ -126,7 +125,7 @@
           </div>
 
           <div class="title-1">
-            <h3>About me</h3>
+            <h3>{{ 'profile.about_me' | translate }}</h3>
             <div class="pull-right">
               <a (click)="enableAbout()" class="edit edit-about"><i class="fa fa-pencil"></i></a>
             </div>
@@ -137,41 +136,41 @@
                 formControlName="aboutFormControl" id="editAbout-text" [disabled]="disableAbout"
                 [(ngModel)]="user.descrpiton"> {{ user.about}}</textarea>
               <mat-error *ngIf="aboutFormControl.hasError('maxlength')">
-                About is <strong> have max length is {{maxInputLength}}</strong>
+                {{ 'profile.about_length_error' | translate }} {{maxInputLength}}
               </mat-error>
             </mat-form-field>
             <span class="float-right alert-length">{{user.about.length}}/{{maxInputLength}}</span>
           </div>
           <div class="title-1">
-            <h3>Interests:</h3>
+            <h3>{{ 'profile.interests' | translate }}</h3>
 
           </div>
           <div class="content-1">
             <mat-form-field appearance="fill" class="full-width " style="width: 100%;">
-              <input matInput placeholder="Interests" formControlName="interestsCtrl" [(ngModel)]="user.interests"
+              <input matInput placeholder="{{ 'profile.interests_placeholder' | translate }}" formControlName="interestsCtrl" [(ngModel)]="user.interests"
                 required>
               <mat-error *ngIf="interestsCtrl.hasError('maxlength')">
-                Interests is <strong> have max length is {{maxInputLength}}</strong>
+                {{ 'profile.interests_length_error' | translate }} {{maxInputLength}}
               </mat-error>
             </mat-form-field>
             <span class="float-right alert-length">{{user.interests.length}}/{{maxInputLength}}</span>
           </div>
           <div class="title-1">
-            <h3>Specialities:</h3>
+            <h3>{{ 'profile.specialities' | translate }}</h3>
 
           </div>
           <div class="content-1">
             <mat-form-field appearance="fill" class="full-width " style="width: 100%;">
-              <input matInput placeholder="Interests" formControlName="specialitiesCtrl" [(ngModel)]="user.specialities"
+              <input matInput placeholder="{{ 'profile.specialities_placeholder' | translate }}" formControlName="specialitiesCtrl" [(ngModel)]="user.specialities"
                 required>
               <mat-error *ngIf="specialitiesCtrl.hasError('maxlength')">
-                Specialitie is <strong> have max length is {{maxInputLength}}</strong>
+                {{ 'profile.specialities_length_error' | translate }} {{maxInputLength}}
               </mat-error>
             </mat-form-field>
             <span class="float-right alert-length">{{user.specialities.length}}/{{maxInputLength}}</span>
           </div>
           <div class="title-1" *ngIf="user.role == 'model'">
-            <h3>Category:</h3>
+            <h3>{{ 'profile.category' | translate }}</h3>
 
           </div>
           <div class="content-1">
@@ -179,34 +178,34 @@
             <mat-form-field appearance="fill" class="full-width " style="width: 100%;" *ngIf="user.role == 'model'">
               <mat-label>{{user.category}}</mat-label>
               <mat-select [(value)]="user.category">
-                <mat-option value="male">Male</mat-option>
-                <mat-option value="female">Female</mat-option>
-                <mat-option value="couples">couples</mat-option>
+                <mat-option value="male">{{ 'profile.male' | translate }}</mat-option>
+                <mat-option value="female">{{ 'profile.female' | translate }}</mat-option>
+                <mat-option value="couples">{{ 'profile.couples' | translate }}</mat-option>  
               </mat-select>
             </mat-form-field>
           </div>
           <div class="title-1">
-            <h3>Contact us</h3>
+            <h3>{{ 'profile.contact_us' | translate }}</h3>
             <div class="pull-right">
               <a (click)="enableAbout()" class="edit"><i class="fa fa-pencil"></i></a>
             </div>
           </div>
           <div class="content-1">
             <div class="form-group row">
-              <label class="col-sm-5">Base city:</label>
+              <label class="col-sm-5">{{ 'profile.base_city' | translate }}</label>
               <div class="col-sm-7">
                 <mat-form-field class="example-full-width">
-                  <mat-label>City</mat-label>
+                  <mat-label>{{ 'profile.city_label' | translate }}</mat-label>
                   <input matInput formControlName="cityFormControl" [(ngModel)]="user.location.city"
-                    [errorStateMatcher]="matcher" placeholder="Ex. Chicago IL">
+                    [errorStateMatcher]="matcher" placeholder="{{ 'profile.city_placeholder' | translate }}">
                   <mat-error *ngIf="cityFormControl.hasError('required')">
-                    City is <strong>required</strong>
+                    {{ 'profile.city_required' | translate }}
                   </mat-error>
                 </mat-form-field>
               </div>
             </div>
             <div class="form-group row" *ngIf="user.role=='model'">
-              <label class="col-sm-5">Phone Number</label>
+              <label class="col-sm-5">{{ 'profile.phone_number' | translate }}</label>
               <div class="col-sm-7 phone-flat">
                 <div class="example-full-width">
                   <ngx-intl-tel-input [inputId]="'adsasd'" [cssClass]="'custom'"
