@@ -37,7 +37,21 @@ export class NavigationComponent implements OnInit {
     private callService:CallService,private searchService:SearchService,private pageConfigService:PageconfigService,private location:Location,
     private router:Router,
     public translate: TranslateService) { 
-      translate.setDefaultLang('ru');
+
+      this.translate.addLangs(['en', 'ru', 'fr']);
+      
+      // Get Country Code
+      let langs = ['en', 'ru', 'fr'];
+      var countryCode = Intl.DateTimeFormat().resolvedOptions().locale.substr(0,2);
+      console.log("Country Code ", countryCode);
+      if (langs.indexOf(countryCode) > -1) {
+        translate.setDefaultLang(countryCode);
+      } else {
+        translate.setDefaultLang('en');  
+      }
+      // translate.use(countryCode);
+      // translate.setDefaultLang('en');
+
 
       this.searchTerm$.subscribe(inputData => {
       });
