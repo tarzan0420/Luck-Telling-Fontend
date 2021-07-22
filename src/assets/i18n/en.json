@@ -284,5 +284,37 @@
         "notification"  : "Notification",
         "language"      : "LANGUAGE:",
         "city"          : "City:"
+    },
+
+    "howtocall" : {
+        "step1"     : "Step 1. Create a FREE account",
+        "click_here"    : "Click here",
+        "to_register"   : "to register now in less than a minute for FREE!",
+        "step2"         : "Step 2. Add minutes to your account",
+        "step2_desc"    : "Once you are logged in, click “Get Minutes”, select your package and finalize the transaction.",
+        "more_info"     : "for more information about our packages and pricing",
+        "note"          : "Note:",
+        "see_our"       : "See our ",
+        "terms_cond"    : "Terms & Conditions",
+        "for_call"      : "for call credit expiration terms",
+        "calling"       : "Calling is via our website or your mobile phone browser",
+        "step3"         : "Step 3. Choose a ",
+        "and_click"     : "and click on “Call Me Now”",
+        "choose_the"    : "Choose the available",
+        "you_prefer"    : " you prefer and click on the “Call Me Now” button",
+        "have_fun"      : "Have fun with luck-telling.com",
+        "enjoy_our"     : "Enjoy your conversation! If you have any questions about how to call or about any other matter, please read our ",
+        "faq"           : "Frequently Asked Questions",
+        "page_first"    : "page first. Otherwise feel free to contact us at support@luck-telling.com",
+        "requirements"  : "Requirements",
+        "web_calling"   :  "Requirements for web calling",
+        "windows"       : " 1. Windows, Android, IOS device/computer",
+        "internet"      : "2. Internet Connection (at least 256 kb/s)",
+        "google_chrome" : ": Google Chrome (",
+        "windows_android" : "Windows / Android",
+        "3"             : "3. For ",
+        "iphone_ipad"   : "(Iphone/Ipad) users: Safari Browser (version 11 and higher)",
+        "4"             : "4. Allow luck-telling.com to access your microphone.",
+        "5"             : "5. Call quality is best when using headphones."
     }
 }

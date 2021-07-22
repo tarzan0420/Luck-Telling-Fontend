@@ -4,7 +4,8 @@ import { HowToCallComponent} from './page/how-to-call.component';
 import { SharedModule,ImportsMaterialModule} from '@/shared/shared.module';
 import {FormsModule} from '@angular/forms';
 import {PipeModule} from '@/_pipe/pipe/pipe.module';
-import { HowToCallRoutingModule} from './how-to-call-routing.module'
+import { HowToCallRoutingModule} from './how-to-call-routing.module';
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [
   	HowToCallComponent
@@ -15,7 +16,8 @@ import { HowToCallRoutingModule} from './how-to-call-routing.module'
     SharedModule,
     CommonModule,
     FormsModule,
-    HowToCallRoutingModule
+    HowToCallRoutingModule,
+    TranslateModule
   ]
 })
 export class HowToCallModule { }
