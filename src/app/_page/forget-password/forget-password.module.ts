@@ -10,6 +10,8 @@ import {
 } from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field'; 
 import { SharedModule} from '@/shared/shared.module';
+import { TranslateModule } from '@ngx-translate/core';
+
 const routes: Routes = [
   { path: '', component: ForgotPasswordComponent },
 ];
@@ -21,7 +23,8 @@ const routes: Routes = [
     ReactiveFormsModule,
     CommonModule,
     SharedModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    TranslateModule
   ],
 })
 export class ForgetPasswordModule { }

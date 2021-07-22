@@ -10,7 +10,7 @@ import { ReactiveFormsModule,FormsModule }    from '@angular/forms';
     CommonModule,
 	ReactiveFormsModule,
 	FormsModule,
-	ResponseResetPasswordRoutingModule
+	ResponseResetPasswordRoutingModule,
   ]
 })
 export class ResponseResetPasswordModule { }

@@ -109,5 +109,88 @@
         "confirm_pwd"   : "Confirm Password",
         "register"      : "REGISTER",
         "cancel"        : "CANCEL"
+    },
+
+    "forgot_password" : {
+        "forgot_password"   : "Forgot Password",
+        "email"             : "Email",
+        "reset_password"    : "RESET PASSWORD",
+        "enter_valid_email" : "Please enter a valid email!"
+    },
+
+    "register" : {
+        "enter_your_account"    : "Enter your account",
+        "first_name"            : "First Name",
+        "first_name_required"   : "First Name is required",
+        "last_name"             : "Last Name",
+        "last_name_required"    : "Last Name is required",
+        "email"                 : "Email",
+        "email_required"        : "Email is required.",
+        "email_invalid"         : "Enter a valid email",
+        "password"              : "Password",
+        "password_length_error" : "Password has to be at least 8",
+        "password_required"     : "Password is required.",
+        "password_mismatch"     : "Passwords do not match",
+
+        "confirm_pwd"       : "Confirm Password",
+        "phone"             : "Phone",
+        "phone_invalid"     : "Phone number not valid",
+        "back"              : "Back",
+        "next"              : "Next",
+
+        "fillout_your_info" : "Fill out your info",
+        "about"             : "About:",
+        "about_placeholder" : "About",
+        "about_max_length_1": "About is",
+        "about_max_length_2": "have max length is",
+        "interest"          : "Interests :",
+        "interest_placeholder" : "Interests",
+        "interest_error_1"  : "Interests is ",
+        "interest_error_2"  : " have max length is ",
+        "specialists"       : "Specialities:",
+        "spec_placeholders" : "Specialities",
+        "spec_error_1"      : "Specialities is ",
+        "spec_error_2"      : " have max length is ",
+        "category"          : "Category:",
+        "category_label"    : "Category",
+        "male"              : "Male",
+        "female"            : "Female",
+        "couples"           : "Couples",
+
+        "upload_file"       : "Upload File",
+        "audio_file"        : "Audio file",
+        "file_max_error"    : "Maximum file size 10Mb .File is required",
+
+        "done"              : "Done",
+        "you_are_done"      : "You are done",
+        "submit"            : "Submit"
+    },
+
+    "contact_us" : {
+        "title"             : "Contact us",
+        "contact_us_desc"   : "Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.",
+        "your_name"         : "Your name",
+        "name_required"     : "Name is required.",
+        "your_email"        : "Your email",
+        "email_required"    : "Email is required.",
+        "email_not_correct" : "Email not correct.",
+        "phone"             : "Phone",
+        "phone_required"    : "Phone is required.",
+        "subject"           : "Subject",
+        "subject_required"  : "Subject is required.",
+        "your_message"      : "Your message",
+        "message_required"  : "Message is required.",
+        "send"              : "Send",
+        "close"             : "Close"
+    },
+
+    "app" : {
+        "you_have_calling"  : "You have a calling from",
+        "available"         : "Available: ",
+        "minutes"           : "minutes",
+        "hangup"            : "hangup",
+        "answer"            : "Answer",
+        "calling"           : "calling",
+        "time_remaining"    : "Time remaining:"
     }
 }
