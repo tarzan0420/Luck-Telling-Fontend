@@ -2,7 +2,7 @@
 <div class="model-home">
   <div class="container">
     <div class="hea-top-main">
-      <h3>History</h3>
+      <h3>{{ 'history.history' | translate }}</h3>
     </div>
     <ul class="list-history">
       <li *ngFor="let itemTalk of listTalk |slice: (page-1) * pageSize : (page-1) * pageSize + pageSize"
@@ -22,7 +22,7 @@
               <div class="txt-model">
                 <div class="title-model">
                   <h3><a href="{{baseUrl}}/model-detail/{{itemTalk.to._id}}">{{itemTalk.to.lastName }}</a></h3>
-                  <div class="age-item">Age - {{itemTalk.to.age}} </div>
+                  <div class="age-item">{{ 'history.age' | translate }} {{itemTalk.to.age}} </div>
                 </div>
                 <div class="star-v">
                   <ng-template #t let-fill="fill">
@@ -34,15 +34,15 @@
                   </ngb-rating>
                   <span class="volume-model"><i class="fa fa-volume-up"></i></span>
                 </div>
-                <div class="Language-model">LANGUAGE: {{itemTalk.to.languages}}</div>
-                <div class="date">Date: {{itemTalk.createdAt | date:"medium"}}</div>
+                <div class="Language-model">{{ 'history.languages' | translate }}{{itemTalk.to.languages}}</div>
+                <div class="date">{{ 'history.date' | translate }} {{itemTalk.createdAt | date:"medium"}}</div>
 
               </div>
             </div>
             <div class="col-sm-6">
               <div class="spent-credit">
-                <div>{{itemTalk.getCallDuration() }} mins Spent</div>
-                <div class="bg-pink">{{itemTalk.getToken(price)}} Credit</div>
+                <div>{{itemTalk.getCallDuration() }} {{ 'history.mins_spent' | translate }}</div>
+                <div class="bg-pink">{{itemTalk.getToken(price)}} {{ 'history.credit' | translate }}</div>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@
                 <div class="txt-model" *ngIf="itemTalk.userId">
                   <div class="title-model">
                     <h3><a >{{itemTalk.userId.lastName }}</a></h3>
-                    <div class="age-item">Age - {{itemTalk.userId.age}} </div>
+                    <div class="age-item">{{ 'history.age' | translate }} {{itemTalk.userId.age}} </div>
                   </div>
                   <div class="star-v">
                     <ng-template #t let-fill="fill">
@@ -70,14 +70,14 @@
                     </ngb-rating>
                     <span class="volume-model"><i class="fa fa-volume-up"></i></span>
                   </div>
-                  <div class="Language-model">LANGUAGE: {{itemTalk.userId.languages}}</div>
-                  <div class="date">Date: {{itemTalk.createdAt | date:"medium"}}</div>
+                  <div class="Language-model">{{ 'history.languages' | translate }} {{itemTalk.userId.languages}}</div>
+                  <div class="date">{{ 'history.date' | translate }} {{itemTalk.createdAt | date:"medium"}}</div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="spent-credit">
-                  <div>{{itemTalk.getCallDuration() }} mins Spent</div>
-                  <div class="bg-pink">{{itemTalk.getToken(price)}} Credit</div>
+                  <div>{{itemTalk.getCallDuration() }} {{ 'history.mins_spent' | translate }}</div>
+                  <div class="bg-pink">{{itemTalk.getToken(price)}} {{ 'history.credit' | translate }}</div>
                 </div>
               </div>
             </div>
@@ -93,16 +93,16 @@
       </ngb-pagination>
     </nav>
     <div *ngIf="user.role == 'member'" class="renew">
-      <li>Total credit <span>{{floor( spent + blance)}}</span></li>
-      <li>Spent<span>{{floor(spent)}}</span></li>
-      <li>Available Balance<span>{{floor(blance)}}</span></li>
-      <li>Minutes<span> {{floor(minutes)}} Minutes</span></li>
+      <li>{{ 'history.total_credit' | translate }} <span>{{floor( spent + blance)}}</span></li>
+      <li>{{ 'history.spent' | translate }}<span>{{floor(spent)}}</span></li>
+      <li>{{ 'history.available_balance' | translate }}<span>{{floor(blance)}}</span></li>
+      <li>{{ 'history.minutes' | translate }}<span> {{floor(minutes)}} {{ 'history.minutes' | translate }}</span></li>
       <button (click)="reload()" class="btn btn-danger btn-block">RENEW</button>
     </div>
     <div *ngIf="user.role == 'clairvoyant' " class="renew">
-      <li>Total Earned <span>{{getSpent()}} {{currency}}</span></li>
-      <li>Admin Commission <span>{{getAdminCommission(commission)}} {{currency}} ({{commission}}%) </span></li>
-      <li>Available Balance<span>{{getBlance()}} {{currency}}</span></li>
+      <li>{{ 'history.total_earned' | translate }} <span>{{getSpent()}} {{currency}}</span></li>
+      <li>{{ 'history.admin_comission' | translate }}<span>{{getAdminCommission(commission)}} {{currency}} ({{commission}}%) </span></li>
+      <li>{{ 'history.available_balance' | translate }}<span>{{getBlance()}} {{currency}}</span></li>
     </div>
 
   </div>

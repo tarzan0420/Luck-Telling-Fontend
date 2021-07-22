@@ -242,5 +242,22 @@
         "city_placeholder"  : "Ex. Chicago IL",
         "city_required"     : "City is required",
         "phone_number"      : "Phone Number"
+    },
+
+    "history" : {
+        "history"       : "History",
+        "age_"          : "Age - ",
+        "language"      : "LANGUAGE: ",
+        "date"          : "Date: ",
+        "mins_spent"    : "mins Spent",
+        "credit"        : " Credit",
+        "total_credit"  : "Total credit",
+        "spent"         : "Spent",
+        "available_balance" : "Available Balance",
+        "minutes"       : "Minutes",
+        "renew"         : "RENEW",
+        "total_earned"  : "Total Earned",
+        "admin_comission"    : "Admin Commission"
+
     }
 }

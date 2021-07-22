@@ -6,7 +6,8 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import {PipeModule} from '@/_pipe/pipe/pipe.module';
-import { TalkHistoryRoutingModule} from './talk-history-routing.module'
+import { TalkHistoryRoutingModule} from './talk-history-routing.module';
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [
   	TalkHistoryComponent
@@ -19,7 +20,8 @@ import { TalkHistoryRoutingModule} from './talk-history-routing.module'
     SharedModule,
     CommonModule,
     FormsModule,
-    TalkHistoryRoutingModule
+    TalkHistoryRoutingModule,
+    TranslateModule
   ]
 })
 
