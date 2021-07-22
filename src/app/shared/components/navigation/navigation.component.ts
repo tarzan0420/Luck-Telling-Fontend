@@ -37,7 +37,7 @@ export class NavigationComponent implements OnInit {
     private callService:CallService,private searchService:SearchService,private pageConfigService:PageconfigService,private location:Location,
     private router:Router,
     public translate: TranslateService) { 
-      translate.setDefaultLang('en');
+      translate.setDefaultLang('ru');
 
       this.searchTerm$.subscribe(inputData => {
       });
