@@ -3,10 +3,10 @@
     <div class="container">
     <div class="hea-top-main">
         <div class="thumbnail">
-            <a [routerLink]="['/home']"> HOME</a>   >  
+            <a [routerLink]="['/home']"> {{ 'notification.home' | translate }}</a>   >  
             <a [routerLink]="['/category', user.role]">{{ user.role }}</a>   >  
             <span>{{ user.firstName+"  "+user.lastName }}</span>
-            <span>Notification</span>
+            <span>{{ 'notification.notification' | translate }}</span>
         </div>
         
     </div>
@@ -41,8 +41,8 @@
                           </div>
                           
                         </div>
-                        <div class="Language-model">LANGUAGE: {{ user.languages  }}</div>
-                        <div class="city-model">City: {{ user.location.city }}</div>
+                        <div class="Language-model">{{ 'notification.language' | translate }} {{ user.languages  }}</div>
+                        <div class="city-model">{{ 'notification.city' | translate }} {{ user.location.city }}</div>
                       </div>
                 </div>
 
@@ -51,7 +51,7 @@
             <div class="col-sm-7 col-md-8">
                 <div class="box-detail">
                     <div class="title-box-detail">
-                        <i class="fa fa-info"></i>  notification
+                        <i class="fa fa-info"></i>  {{ 'notification.notification' | translate }}
                     </div>
                     <div class="body-box-detail" *ngIf="notifications.length">
                         <ul *ngFor="let notification of notifications  | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize " class="list-nofication">

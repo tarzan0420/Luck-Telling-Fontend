@@ -31,7 +31,7 @@
           <button *ngIf="user && user.role == 'clairvoyant' " ngbDropdownItem [routerLink]="['/auth/send-withdraw']"> {{ 'navbar.clairvoyant.send_withdraw' | translate }}</button>
           <button *ngIf="user && user.role == 'clairvoyant' " ngbDropdownItem [routerLink]="['/auth/bank-account']"> {{ 'navbar.clairvoyant.bank_account' | translate }}</button>
           <button *ngIf="user && user.role == 'clairvoyant' " ngbDropdownItem [routerLink]="['/my-gallery']"> {{ 'navbar.clairvoyant.gallery' | translate }}</button>
-          <button ngbDropdownItem (click)="logout()">{{ 'navbar.user.logout' | translate }}</button>
+          <button ngbDropdownItem (click)="logout()">{{ 'navbar.user.log_out' | translate }}</button>
         </div>
       </li>
       <li>
