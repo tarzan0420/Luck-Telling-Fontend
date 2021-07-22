@@ -3,9 +3,9 @@
   <div class="container">
   <div class="hea-top-main">
     <div class="thumbnail">
-      <a href="#">Home </a>  >  
+      <a href="#">{{ 'message.home' | translate }} </a>  >  
       <a href="#">{{user.firstName}} {{user.lastName}} </a>  >   
-      <span>Chat</span>
+      <span>{{ 'message.chat' | translate }}</span>
     </div>
   </div>
   <div class="chat-main" #chatMain  [ngClass]="toogleChatClicked?'active':'' ">
@@ -41,9 +41,9 @@
         <div class="item-user">
           <div (click)='goModelDetail()' class="pic-user" *ngIf="to && to.avatarUrl"><img class="mat-list-avatar" src="{{imageHelper.getAvatarLinkV2(to,to.avatarPath,'thumbnail')}}"></div>
           <h3  (click)='goModelDetail()'>{{to.firstName}} {{to.lastName}}</h3>
-          <div *ngIf="to.status == true ;else chatOffline" class="status-top">Online <span class="status online"></span></div>
+          <div *ngIf="to.status == true ;else chatOffline" class="status-top">{{ 'message.online' | translate }}<span class="status online"></span></div>
           <ng-template #chatOffline>
-            <div  class="status-top"  *ngIf="to.status == false"> Offline<span class="status offline"></span></div>
+            <div  class="status-top"  *ngIf="to.status == false"> {{ 'message.offline' |  translate }}<span class="status offline"></span></div>
           </ng-template>
         </div>
         <!-- <div class="pull-right">
@@ -52,7 +52,7 @@
       </div>
       <div class="list-chat" #listChat [scrollTop]="listChat.scrollHeight">
         <a class="load_more_message"  (click)='loadMoreMessage()' *ngIf="canLoadMessage">
-              load more!
+              {{ 'message.load_more' | translate }}
         </a>
         <div  *ngFor="let msgItem of messages" [ngClass]="{'chat-2 chat': msgItem.from.id == user.id  || msgItem.from == user.id, 'chat-1 chat': msgItem.from.id == to.id || msgItem.from == to.id}">
           <app-messages-chat [message]="msgItem" [to]="to" [user]="user"></app-messages-chat>
@@ -61,7 +61,7 @@
 
       <div class="form-message">
         <input #imgupload type="file" id="imgupload" style="display:none"   accept="image/x-png,image/gif,image/jpeg"  (change)="attachImg($event)"/>
-        <textarea placeholder="Enter Message" [(ngModel)]="message" (keyup)="$event.keyCode==13 && sendMessage()"></textarea>
+        <textarea placeholder="{{ 'message.enter_message' | translate }}" [(ngModel)]="message" (keyup)="$event.keyCode==13 && sendMessage()"></textarea>
         <div class="right-message">
           <!-- <div class="camera-message"><a href="javascript:void(0)"><i class="fa fa-camera"></i></a></div> -->
           <!-- <div class="attach-message"><a (click)="attachMessage()"><i class="fa fa-paperclip"></i></a></div> -->

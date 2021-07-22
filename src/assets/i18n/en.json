@@ -258,6 +258,15 @@
         "renew"         : "RENEW",
         "total_earned"  : "Total Earned",
         "admin_comission"    : "Admin Commission"
+    },
 
+    "message" : {
+        "home"      : "Home",
+        "chat"      : "Chat",
+        "search"    : "Search",
+        "online"    : "Online",
+        "offline"   : "Offline",
+        "load_more" : "load more",
+        "enter_message"     : "Enter Message"
     }
 }
