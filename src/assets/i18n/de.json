@@ -296,6 +296,28 @@
          "google_chrome":": Google Chrome (",
          "windows_android":"Windows / Android",
          "iphone_ipad":"(Iphone/Ipad) Benutzer: Safari Browser (Version 11 und höher)"
-      }
-   
- }
+      },
+
+      
+   "model":{
+      "call_me":"Ruf mich jetzt an!",
+      "busy":"Hellseher ist beschäftigt",
+      "city":"Stadt:",
+      "send_msg":"Nachricht senden",
+      "why_choose":"Warum uns wählen?",
+      "anonymous":"Anonym, sicher und geschützt",
+      "speak_multi":"Sprechen Sie in mehreren Sprachen",
+      "great_audio":"Hervorragende Audioqualität",
+      "no_phone":"Keine Telefongebühren",
+      "phone_internet":"Telefon- und Internetanrufe",
+      "worldwide ":"Weltweit zugänglich",
+      "your_privacy":"Ihre Privatsphäre ist wichtig!",
+      "privacy_detail":"wir legen großen Wert auf Ihre Privatsphäre. Alle unsere Anrufe werden mit absoluter Diskretion behandelt. Um Ihre Privatsphäre zu schützen, werden Gebühren sicher verarbeitet und auf Ihrer Kreditkartenabrechnung diskret als Verotel*vtsup.com oder Epoch.com angezeigt. Keine Erwähnung von Telefonsex oder einem Begriff für Erwachsene.",
+      "at":"Bei",
+      "about":"Über",
+      "specialities":"Spezialitäten",
+      "we_are_callers":"Was andere Anrufer über mich sagten",
+      "see_all_reviews":"Alle Bewertungen anzeigen",
+      "available_operators":"Verfügbare Operatoren"
+   }
+}

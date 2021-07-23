@@ -296,5 +296,29 @@
          "google_chrome":": Google Chrome (",
          "windows_android":"Windows / Android",
          "iphone_ipad":"(Iphone / Ipad) usuarios: Safari Browser (versión 11 y superior)"
-      }
+      },
+
+      
+   "model":{
+      "call_me":"¡Llámame ahora!",
+      "busy":"El clarividente está ocupado",
+      "city":"Ciudad:",
+      "send_msg":"Enviar mensaje",
+      "why_choose":"¿Por qué elegirnos?",
+      "anonymous":"Anónimo, seguro y protegido",
+      "speak_multi":"Habla en varios idiomas",
+      "great_audio":"Gran calidad de audio",
+      "no_phone":"Sin cargos telefónicos",
+      "phone_internet":"Llamadas telefónicas e Internet",
+      "worldwide ":"Accesible en todo el mundo",
+      "your_privacy":"¡Tu privacidad es importante!",
+      "privacy_detail":"valoramos mucho su privacidad. Todas nuestras llamadas serán atendidas con total discreción. Para proteger su privacidad, los cargos se procesarán de forma segura y aparecerán discretamente como Verotel * vtsup.com o Epoch.com en el extracto de su tarjeta de crédito. No se menciona el sexo telefónico ni ningún término relacionado con los adultos.",
+      "at":"A",
+      "about":"Acerca de",
+      "specialities":"Especialidades",
+      "we_are_callers":"¿Qué dijeron otras personas sobre mí?",
+      "see_all_reviews":"Ver todas las reseñas",
+      "available_operators":"Operadores disponibles"
+   }
+      
  }

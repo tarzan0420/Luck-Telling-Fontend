@@ -127,7 +127,7 @@
                     <mat-form-field class="example-full-width">
                       <mat-label>{{ 'profile.languages_label' | translate }}</mat-label>
                       <input matInput formControlName="languagesFormControl" [errorStateMatcher]="matcher"
-                        placeholder="{{ 'profile.languages_required' | translate }}" [(ngModel)]="user.languages">
+                        [(ngModel)]="user.languages">
                     </mat-form-field>
                   </div>
                 </div>

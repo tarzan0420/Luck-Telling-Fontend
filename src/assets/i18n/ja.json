@@ -295,5 +295,29 @@
          "google_chrome":"： グーグルクローム （",
          "windows_android":"Windows / Android",
          "iphone_ipad":"（iPhone / iPad）ユーザー：Safariブラウザ（バージョン11以降）"
-      }
+      },
+
+      
+   "model":{
+      "call_me":"今すぐ電話して！",
+      "busy":"千里眼は忙しい",
+      "city":"市：",
+      "send_msg":"メッセージを送る",
+      "why_choose":"なぜ私たちを選ぶのですか？",
+      "anonymous":"匿名、安全、安心",
+      "speak_multi":"複数の言語で話す",
+      "great_audio":"優れたオーディオ品質",
+      "no_phone":"電話料金なし",
+      "phone_internet":"電話とインターネット通話",
+      "worldwide ":"世界中でアクセス可能",
+      "your_privacy":"あなたのプライバシーは重要です！",
+      "privacy_detail":"私たちはあなたのプライバシーを非常に大切にしています。すべての通話は完全な裁量で処理されます。プライバシーを保護するために、請求は安全に処理され、クレジットカードの明細書にVerotel * vtsup.comまたはEpoch.comとして慎重に表示されます。電話セックスや成人関連の用語についての言及はありません。",
+      "at":"で",
+      "about":"約",
+      "specialities":"特産品",
+      "we_are_callers":"他の発信者が私について言ったこと",
+      "see_all_reviews":"すべてのレビューを見る",
+      "available_operators":"利用可能な演算子"
+   }
+      
  }

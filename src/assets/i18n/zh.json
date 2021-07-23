@@ -295,5 +295,29 @@
       "google_chrome":"： 谷歌浏览器 （",
       "windows_android":"视窗/安卓",
       "iphone_ipad":"(Iphone/Ipad) 用户：Safari 浏览器（版本 11 及更高版本）"
+   },
+
+   
+   "model":{
+      "call_me":"现在就给我打电话！",
+      "busy":"千里眼很忙",
+      "city":"城市：",
+      "send_msg":"发信息",
+      "why_choose":"为什么选择我们？",
+      "anonymous":"匿名、安全和可靠",
+      "speak_multi":"说多种语言",
+      "great_audio":"出色的音频质量",
+      "no_phone":"无电话费",
+      "phone_internet":"电话和网络电话",
+      "worldwide ":"全球可访问",
+      "your_privacy":"您的隐私很重要！",
+      "privacy_detail":"我们非常重视您的隐私。我们将完全酌情处理所有来电。为保护您的隐私，我们将安全处理收费，并在您的信用卡对帐单上谨慎地显示为 Verotel*vtsup.com 或 Epoch.com。没有提及电话性爱或任何与成人相关的术语。",
+      "at":"在",
+      "about":"关于",
+      "specialities":"特产",
+      "we_are_callers":"其他来电者对我的评价",
+      "see_all_reviews":"查看所有评论",
+      "available_operators":"可用的运营商"
    }
+   
  }

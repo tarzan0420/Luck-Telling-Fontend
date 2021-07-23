@@ -296,5 +296,29 @@
       "google_chrome":": Google Chrome (",
       "windows_android":"Windows / Android",
       "iphone_ipad":"(Iphone/Ipad) kullanıcıları: Safari Tarayıcı (sürüm 11 ve üstü)"
+   },
+
+   
+   "model":{
+      "call_me":"Beni şimdi ara!",
+      "busy":"Kâhin Meşgul",
+      "city":"Şehir:",
+      "send_msg":"Mesaj gönder",
+      "why_choose":"Neden bizi seçmelisiniz?",
+      "anonymous":"Anonim, Güvenli ve Güvenli",
+      "speak_multi":"Birden Fazla Dilde Konuşun",
+      "great_audio":"Mükemmel Ses Kalitesi",
+      "no_phone":"Telefon Ücreti Yok",
+      "phone_internet":"Telefon ve İnternet Araması",
+      "worldwide ":"Dünya Çapında Erişilebilir",
+      "your_privacy":"Gizliliğiniz önemlidir!",
+      "privacy_detail":"gizliliğinize çok değer veriyoruz. Tüm aramalarımız tam bir gizlilik içinde ele alınacaktır. Gizliliğinizi korumak için, ücretler güvenli bir şekilde işlenecek ve kredi kartı ekstrenizde Verotel*vtsup.com veya Epoch.com olarak gizli bir şekilde görünecektir. Telefon seksinden veya yetişkinlerle ilgili herhangi bir terimden bahsedilmiyor.",
+      "at":"NS",
+      "about":"Hakkında",
+      "specialities":"spesiyaller",
+      "we_are_callers":"Diğer arayanlar benim hakkımda ne dedi",
+      "see_all_reviews":"Tüm İncelemeleri Gör",
+      "available_operators":"Mevcut operatörler"
    }
+   
  }

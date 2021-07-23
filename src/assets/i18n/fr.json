@@ -295,5 +295,29 @@
          "google_chrome":": Google Chrome (",
          "windows_android":"Windows/Android",
          "iphone_ipad":"Utilisateurs (Iphone/Ipad) : Navigateur Safari (version 11 et supérieure)"
-      }
+      },
+
+      
+   "model":{
+      "call_me":"Appelle-moi maintenant!",
+      "busy":"Clairvoyant est occupé",
+      "city":"Ville:",
+      "send_msg":"Envoyer le message",
+      "why_choose":"Pourquoi nous choisir?",
+      "anonymous":"Anonyme, sûr et sécurisé",
+      "speak_multi":"Parlez en plusieurs langues",
+      "great_audio":"Excellente qualité audio",
+      "no_phone":"Pas de frais de téléphone",
+      "phone_internet":"Appels téléphoniques et Internet",
+      "worldwide ":"Accessible dans le monde entier",
+      "your_privacy":"Votre vie privée est importante !",
+      "privacy_detail":"nous accordons une grande importance à votre vie privée. Tous nos appels seront traités en toute discrétion. Pour protéger votre vie privée, les frais seront traités en toute sécurité et apparaîtront discrètement sous le nom Verotel*vtsup.com ou Epoch.com sur votre relevé de carte de crédit. Aucune mention de sexe par téléphone ou de terme lié aux adultes.",
+      "at":"À",
+      "about":"À propos de",
+      "specialities":"Spécialités",
+      "we_are_callers":"Ce que les autres appelants ont dit de moi",
+      "see_all_reviews":"Voir tous les avis",
+      "available_operators":"Opérateurs disponibles"
+   }
+      
  }

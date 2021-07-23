@@ -295,5 +295,29 @@
       "google_chrome":": Google Chrome (",
       "windows_android":"Windows / Android",
       "iphone_ipad":"(Iphone/Ipad) gebruikers: Safari Browser (versie 11 en hoger)"
+   },
+
+   
+   "model":{
+      "call_me":"Bel mij nu!",
+      "busy":"Helderziende is bezig",
+      "city":"Stad:",
+      "send_msg":"Bericht versturen",
+      "why_choose":"Waarom voor ons kiezen?",
+      "anonymous":"Anoniem, veilig en beveiligd",
+      "speak_multi":"Spreek in meerdere talen",
+      "great_audio":"Geweldige audiokwaliteit",
+      "no_phone":"Geen telefoonkosten",
+      "phone_internet":"Bellen en internetten",
+      "worldwide ":"Wereldwijd toegankelijk",
+      "your_privacy":"Uw privacy is belangrijk!",
+      "privacy_detail":"we hechten veel waarde aan uw privacy. Al onze telefoontjes worden in alle discretie behandeld. Om uw privacy te beschermen, worden afschrijvingen veilig verwerkt en verschijnen ze discreet als Verotel*vtsup.com of Epoch.com op uw creditcardafschrift. Er wordt geen melding gemaakt van telefoonseks of een term die verband houdt met volwassenen.",
+      "at":"Bij",
+      "about":"Over",
+      "specialities":"Specialiteiten",
+      "we_are_callers":"Wat andere bellers over mij zeiden",
+      "see_all_reviews":"Bekijk alle beoordelingen",
+      "available_operators":"Beschikbare operators"
    }
+   
  }

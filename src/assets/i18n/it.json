@@ -295,5 +295,29 @@
          "google_chrome":": Google Chrome (",
          "windows_android":"Windows/Android",
          "iphone_ipad":"Utenti (Iphone/Ipad): Safari Browser (versione 11 e successive)"
-      }
+      },
+
+
+   "model":{
+      "call_me":"Chiamami adesso!",
+      "busy":"Chiaroveggente è occupato",
+      "city":"Città:",
+      "send_msg":"Invia messaggio",
+      "why_choose":"Perché scegliere noi?",
+      "anonymous":"Anonimo, sicuro e protetto",
+      "speak_multi":"Parla in più lingue",
+      "great_audio":"Ottima qualità audio",
+      "no_phone":"Nessun addebito telefonico",
+      "phone_internet":"Telefonate e chiamate via Internet",
+      "worldwide ":"Accessibile in tutto il mondo",
+      "your_privacy":"La tua privacy è importante!",
+      "privacy_detail":"teniamo molto alla tua privacy. Tutte le nostre chiamate saranno gestite con la massima discrezione. Per proteggere la tua privacy, gli addebiti verranno elaborati in modo sicuro e appariranno discretamente come Verotel*vtsup.com o Epoch.com sull'estratto conto della tua carta di credito. Nessuna menzione del sesso telefonico o di qualsiasi termine relativo agli adulti.",
+      "at":"In",
+      "about":"Di",
+      "specialities":"Specialità",
+      "we_are_callers":"Cosa hanno detto di me gli altri chiamanti",
+      "see_all_reviews":"Vedi tutte le recensioni",
+      "available_operators":"Operatori disponibili"
+   }
+      
  }

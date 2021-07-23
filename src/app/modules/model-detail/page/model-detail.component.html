@@ -3,13 +3,13 @@
   <div class="container">
     <div class="hea-top-main">
       <div class="thumbnail" *ngIf="model">
-        <a [routerLink]="['/home']"> HOME</a> >
+        <a [routerLink]="['/home']"> {{ 'navbar.home' | translate }}</a> >
         <a [routerLink]="['/models']">{{ model.role | uppercase}}</a> >
         <span>{{ model.getFullName() }}</span>
       </div>
       <div class="pull-right" *ngIf="!user || user.role=='member'">
         <button *ngIf="!model.isCalling && !model.doNotDisturb" (click)="call()" class="btn btn-success"><i
-            class="fa fa-volume-control-phone"></i> Call me now!</button>
+            class="fa fa-volume-control-phone"></i> {{ 'model.call_me' | translate }}</button>
         <button *ngIf="model.isCalling || model.doNotDisturb" (click)="call()" class="btn btn-dangery btn-block"><i
             class="fa fa-volume-up"></i> Clairvoyant Is Busy</button>
       </div>
@@ -45,47 +45,44 @@
                 </ngb-rating>
 
               </div>
-              <div class="Language-model">LANGUAGE: {{ model.languages |  uppercase }}</div>
+              <div class="Language-model">{{ 'home.model.language' | translate }} {{ model.languages |  uppercase }}</div>
               <div class="city-model" *ngIf="model.location">City: {{ model.location?.city || ''}}</div>
               <div class="audio-detail">
                 <audio src="{{model.audioUrl}}" controls></audio>
               </div>
               <div class="button-right-detail"  *ngIf="!user || user.role=='member' ">
                 <button [routerLink]="['/message', model.id]" class="btn btn-danger-ouline btn-block"><i
-                    class="fa fa-envelope"></i> Send Message</button>
+                    class="fa fa-envelope"></i> {{ 'model.send_msg' | translate }}</button>
                 <button *ngIf="!model.isCalling && !model.doNotDisturb" (click)="call()" class="btn btn-success btn-block"><i
-                    class="fa fa-volume-up"></i> Call me now!</button>
+                    class="fa fa-volume-up"></i> {{ 'model.call_me' | translate }}</button>
                 <button *ngIf="model.isCalling || model.doNotDisturb" (click)="call()" class="btn btn-danger btn-block"><i
-                    class="fa fa-volume-up"></i> Clairvoyant  Is Busy</button>
+                    class="fa fa-volume-up"></i> {{ 'model.busy' | translate }}</button>
               </div>
             </div>
           </div>
 
           <div class="box-pink">
             <div class="head-box-pink">
-              <i class="fa fa-question-circle"></i> Why choose us?
+              <i class="fa fa-question-circle"></i> {{ 'model.why_choose' | translate }}
             </div>
             <div class="body-box-pink">
               <ul class="list-1">
-                <li><a href="#">Anonymous, Safe & Secure</a></li>
-                <li><a href="#">Speak in Multiple Languages</a></li>
-                <li><a href="#">Great Audio Quality</a></li>
-                <li><a href="#">No Phone Charges</a></li>
-                <li><a href="#">Phone and Internet Calling</a></li>
-                <li><a href="#">Worldwide Accessible</a></li>
+                <li><a href="#">{{ 'model.anonymous' | translate }}</a></li>
+                <li><a href="#">{{ 'model.speak_multi' | translate}}</a></li>
+                <li><a href="#">{{ 'model.great_audio' | translate }}</a></li>
+                <li><a href="#">{{ 'model.no_phone' | translate }}</a></li>
+                <li><a href="#">{{ 'model.phone_internet' | translate }}</a></li>
+                <li><a href="#">{{ 'model.worldwide' | translate }}</a></li>
               </ul>
             </div>
           </div>
 
           <div class="box-pink">
             <div class="head-box-pink">
-              <i class="fa fa-lock"></i> Your privacy is important!
+              <i class="fa fa-lock"></i> {{ 'model.your_privacy' | translate }}
             </div>
             <div class="body-box-pink">
-              <p>At <a href="{{homeUrl}}">{{title}}</a> we value your privacy very much. All our calls will be handled with full
-                discretion. To protect your privacy, charges will be processed securely and will appear discreetly as
-                Verotel*vtsup.com or Epoch.com on your credit card statement. No mention of phone sex or any adult
-                related term.</p>
+              <p>{{ 'model.at' | translate }}<a href="{{homeUrl}}">{{title}}</a> {{ 'model.privacy_detail' | translate }}</p>
               <img src="assets/images/ssl.png">
             </div>
           </div>
@@ -105,7 +102,7 @@
               </div> -->
               <div class="box-detail">
                 <div class="title-box-detail">
-                  <i class="fa fa-info"></i> about
+                  <i class="fa fa-info"></i> {{ 'model.about' | translate }}
                 </div>
                 <div class="body-box-detail">
                   {{model.about}}
@@ -113,7 +110,7 @@
               </div>
               <div class="box-detail">
                 <div class="title-box-detail">
-                  <i class="fa fa-thumbs-up"></i> Specialities
+                  <i class="fa fa-thumbs-up"></i> {{ 'model.specialities' | translate }}
                 </div>
                 <div class="body-box-detail">
                   {{model.specialities}}
@@ -121,7 +118,7 @@
               </div>
               <div class="box-detail">
                 <div class="title-box-detail">
-                  What other callers said about me
+                  {{ 'model.we_are_callers' | translate }}
                 </div>
                 <div class="body-box-detail">
                   <table class="table-comment">
@@ -144,12 +141,12 @@
 
                     </tr>
                   </table>
-                  <a [routerLink]="['/model/all-review',model.id]" class="btn btn-danger btn-sm">See All Reviews</a>
+                  <a [routerLink]="['/model/all-review',model.id]" class="btn btn-danger btn-sm">{{ 'model.see_all_reviews' | translate }}</a>
                 </div>
               </div>
               <div class="box-detail">
                 <div class="title-box-detail bg-pink">
-                  Available operators
+                  {{ 'model.available_operators' | translate }}
                 </div>
                 <div class="body-box-detail">
                   <div class="row">

@@ -320,5 +320,27 @@
         "iphone_ipad"   : "(Iphone/Ipad) users: Safari Browser (version 11 and higher)",
         "4"             : "4. Allow luck-telling.com to access your microphone.",
         "5"             : "5. Call quality is best when using headphones."
+    },
+
+    "model" : {
+        "call_me"   : "Call me now!",
+        "busy"      : "Clairvoyant Is Busy",
+        "city"      : "City: ",
+        "send_msg"   : "Send Message",
+        "why_choose": "Why choose us?",
+        "anonymous" : "Anonymous, Safe & Secure",
+        "speak_multi" : "Speak in Multiple Languages",
+        "great_audio" : "Great Audio Quality",
+        "no_phone"      : "No Phone Charges",
+        "phone_internet"    : "Phone and Internet Calling",
+        "worldwide "        : "Worldwide Accessible",
+        "your_privacy"      : "Your privacy is important!",
+        "privacy_detail"    : "we value your privacy very much. All our calls will be handled with full discretion. To protect your privacy, charges will be processed securely and will appear discreetly as Verotel*vtsup.com or Epoch.com on your credit card statement. No mention of phone sex or any adult related term.",
+        "at"                : "At ",
+        "about"             : "About",
+        "specialities"      : "Specialities",
+        "we_are_callers"    : "What other callers said about me",
+        "see_all_reviews"   : "See All Reviews",
+        "available_operators" : "Available operators"
     }
 }
