@@ -223,7 +223,10 @@
       "city_label":"Şehir",
       "city_placeholder":"Örn. Chicago IL",
       "city_required":"Şehir gerekli",
-      "phone_number":"Telefon numarası"
+      "phone_number":"Telefon numarası",
+      "man":"Erkek adam",
+      "woman":"Kadın",
+      "other":"Diğer"
    },
    "history":{
       "history":"Tarih",

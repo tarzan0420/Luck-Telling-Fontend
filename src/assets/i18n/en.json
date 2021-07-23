@@ -241,7 +241,11 @@
         "city_label"        : "City",
         "city_placeholder"  : "Ex. Chicago IL",
         "city_required"     : "City is required",
-        "phone_number"      : "Phone Number"
+        "phone_number"      : "Phone Number",
+
+        "man" : "Man",
+        "woman" : "Woman",
+        "other" : "Other"
     },
 
     "history" : {

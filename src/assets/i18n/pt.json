@@ -222,7 +222,10 @@
          "city_label":"Cidade",
          "city_placeholder":"Ex. Chicago IL",
          "city_required":"Cidade é obrigatória",
-         "phone_number":"Número de telefone"
+         "phone_number":"Número de telefone",
+         "man":"Homem",
+         "woman":"Mulher",
+         "other":"Outro"
       },
       "history":{
          "history":"História",

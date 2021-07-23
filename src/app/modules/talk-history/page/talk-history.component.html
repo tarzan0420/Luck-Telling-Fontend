@@ -97,7 +97,7 @@
       <li>{{ 'history.spent' | translate }}<span>{{floor(spent)}}</span></li>
       <li>{{ 'history.available_balance' | translate }}<span>{{floor(blance)}}</span></li>
       <li>{{ 'history.minutes' | translate }}<span> {{floor(minutes)}} {{ 'history.minutes' | translate }}</span></li>
-      <button (click)="reload()" class="btn btn-danger btn-block">RENEW</button>
+      <button (click)="reload()" class="btn btn-danger btn-block">{{ 'history.renew' | translate }}</button>
     </div>
     <div *ngIf="user.role == 'clairvoyant' " class="renew">
       <li>{{ 'history.total_earned' | translate }} <span>{{getSpent()}} {{currency}}</span></li>

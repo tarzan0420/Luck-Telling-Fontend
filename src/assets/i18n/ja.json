@@ -222,7 +222,10 @@
          "city_label":"市",
          "city_placeholder":"例：イリノイ州シカゴ",
          "city_required":"都市が必要です",
-         "phone_number":"電話番号"
+         "phone_number":"電話番号",
+         "man":"おとこ",
+         "woman":"女性",
+         "other":"他の"
       },
       "history":{
          "history":"歴史",

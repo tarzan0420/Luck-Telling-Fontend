@@ -67,9 +67,20 @@
                     <mat-form-field appearance="fill">
                       <mat-label>{{ 'profile.gender_label' | translate }}</mat-label>
                       <mat-select [(value)]="user.gender">
-                        <mat-option *ngFor="let item of genders" [value]="item.value">
-                          {{ item.name }}
+                        
+
+                        <mat-option value="man">
+                          {{ 'profile.man' | translate  }}
                         </mat-option>
+
+                        <mat-option value="woman">
+                          {{ 'profile.woman' | translate  }}
+                        </mat-option>
+
+                        <mat-option value="other">
+                          {{ 'profile.other' | translate  }}
+                        </mat-option>
+
                       </mat-select>
                     </mat-form-field>
                   </div>

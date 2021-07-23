@@ -13,7 +13,7 @@
     <div class="left-main">
       <div class="search-chat">
         <button><i class="fa fa-search"></i></button>
-        <input type="text" name="" placeholder="Search" [(ngModel)]="queryString">
+        <input type="text" name="" placeholder="{{ 'navbar.search' | translate }}" [(ngModel)]="queryString">
       </div>
       <div class="scroll-user">
         <mat-list itemSize="50" minBufferPx="200" maxBufferPx="400" 

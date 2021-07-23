@@ -223,7 +223,10 @@
          "city_label":"Ciudad",
          "city_placeholder":"Ej. Chicago IL",
          "city_required":"Ciudad es requerida",
-         "phone_number":"Número de teléfono"
+         "phone_number":"Número de teléfono",
+         "man":"Hombre",
+         "woman":"Mujer",
+         "other":"Otro"
       },
       "history":{
          "history":"Historia",

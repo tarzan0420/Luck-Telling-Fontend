@@ -224,7 +224,10 @@
          "city_label":"مدينة",
          "city_placeholder":"مثال: Chicago IL",
          "city_required":"المدينة مطلوبة",
-         "phone_number":"رقم الهاتف"
+         "phone_number":"رقم الهاتف",
+         "man":"رجل",
+         "woman":"النساء",
+         "other":"آخر"
       },
       "history":{
          "history":"تاريخ",

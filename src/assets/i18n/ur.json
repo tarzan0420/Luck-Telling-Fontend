@@ -223,7 +223,10 @@
       "city_label":"شہر",
       "city_placeholder":"مثال کے طور پر شکاگو IL",
       "city_required":"شہر درکار ہے",
-      "phone_number":"فون نمبر"
+      "phone_number":"فون نمبر",
+      "man":"آدمی",
+      "woman":"عورت",
+      "other":"دیگر"
    },
    "history":{
       "history":"تاریخ",

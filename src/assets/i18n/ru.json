@@ -223,7 +223,10 @@
          "city_label":"Город",
          "city_placeholder":"Напр. Чикаго, Иллинойс",
          "city_required":"Требуется город",
-         "phone_number":"Телефонный номер"
+         "phone_number":"Телефонный номер",
+         "man":"мужчина",
+         "woman":"Женщина",
+         "other":"Другой"
       },
       "history":{
          "history":"История",

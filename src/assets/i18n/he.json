@@ -224,7 +224,10 @@
          "city_label":"עִיר",
          "city_placeholder":"לשעבר שיקגו אי",
          "city_required":"עיר נדרשת",
-         "phone_number":"מספר טלפון"
+         "phone_number":"מספר טלפון",
+         "man":"איש",
+         "woman":"אִשָׁה",
+         "other":"אַחֵר"
       },
       "history":{
          "history":"הִיסטוֹרִיָה",

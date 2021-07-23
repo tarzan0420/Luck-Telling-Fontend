@@ -222,7 +222,10 @@
       "city_label":"stad",
       "city_placeholder":"Bijv. Chicago IL",
       "city_required":"Plaats is vereist",
-      "phone_number":"Telefoonnummer"
+      "phone_number":"Telefoonnummer",
+      "man":"Man",
+      "woman":"Vrouw",
+      "other":"Ander"
    },
    "history":{
       "history":"Geschiedenis",

@@ -222,7 +222,10 @@
       "city_label":"城市",
       "city_placeholder":"例如伊利诺伊州芝加哥",
       "city_required":"城市为必填项",
-      "phone_number":"电话号码"
+      "phone_number":"电话号码",
+      "man":"男人",
+      "woman":"女士",
+      "other":"其他"
    },
    "history":{
       "history":"历史",
