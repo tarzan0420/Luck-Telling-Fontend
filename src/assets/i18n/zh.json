@@ -309,7 +309,7 @@
       "great_audio":"出色的音频质量",
       "no_phone":"无电话费",
       "phone_internet":"电话和网络电话",
-      "worldwide ":"全球可访问",
+      "worldwide":"全球可访问",
       "your_privacy":"您的隐私很重要！",
       "privacy_detail":"我们非常重视您的隐私。我们将完全酌情处理所有来电。为保护您的隐私，我们将安全处理收费，并在您的信用卡对帐单上谨慎地显示为 Verotel*vtsup.com 或 Epoch.com。没有提及电话性爱或任何与成人相关的术语。",
       "at":"在",
@@ -317,7 +317,13 @@
       "specialities":"特产",
       "we_are_callers":"其他来电者对我的评价",
       "see_all_reviews":"查看所有评论",
-      "available_operators":"可用的运营商"
+      "available_operators":"可用的运营商",
+      "age":"年龄",
+      "review_ratings":"评论和评分",
+      "add_comment":"添加评论",
+      "thanks":"谢谢！",
+      "choose_rating":"选择评级",
+      "please_rate":"请评价"
    }
    
  }

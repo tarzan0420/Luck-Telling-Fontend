@@ -310,7 +310,7 @@
       "great_audio":"Mükemmel Ses Kalitesi",
       "no_phone":"Telefon Ücreti Yok",
       "phone_internet":"Telefon ve İnternet Araması",
-      "worldwide ":"Dünya Çapında Erişilebilir",
+      "worldwide":"Dünya Çapında Erişilebilir",
       "your_privacy":"Gizliliğiniz önemlidir!",
       "privacy_detail":"gizliliğinize çok değer veriyoruz. Tüm aramalarımız tam bir gizlilik içinde ele alınacaktır. Gizliliğinizi korumak için, ücretler güvenli bir şekilde işlenecek ve kredi kartı ekstrenizde Verotel*vtsup.com veya Epoch.com olarak gizli bir şekilde görünecektir. Telefon seksinden veya yetişkinlerle ilgili herhangi bir terimden bahsedilmiyor.",
       "at":"NS",
@@ -318,7 +318,13 @@
       "specialities":"spesiyaller",
       "we_are_callers":"Diğer arayanlar benim hakkımda ne dedi",
       "see_all_reviews":"Tüm İncelemeleri Gör",
-      "available_operators":"Mevcut operatörler"
+      "available_operators":"Mevcut operatörler",
+      "age":"Yaş",
+      "review_ratings":"İnceleme ve Değerlendirme",
+      "add_comment":"Yorum ekle",
+      "thanks":"Teşekkürler!",
+      "choose_rating":"Derecelendirme Seçin",
+      "please_rate":"Lütfen oyla"
    }
    
  }

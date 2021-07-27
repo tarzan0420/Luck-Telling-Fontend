@@ -1,10 +1,10 @@
 <div class="rating-form">
-    <h2>Review & Rating</h2>
+    <h2>{{ 'model.review_ratings' | translate }}</h2>
     <form [formGroup]="reviewForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
-            <textarea placeholder="Add a comment" rows="5" type="text" formControlName="content" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.content.errors }" ></textarea>
+            <textarea placeholder="{{ 'model.add_comment' | translate }}" rows="5" type="text" formControlName="content" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.content.errors }" ></textarea>
               <div *ngIf="submitted && f.content.errors" class="invalid-feedback">
-                  <div *ngIf="f.content.errors.required">First Name is required</div>
+                  <div *ngIf="f.content.errors.required">{{ 'register.first_name_required' | translate }}}</div>
               </div>
         </div>
         <div class="form-group">
@@ -17,11 +17,11 @@
                
             </ngb-rating>
             <div class="form-text small">
-              <div *ngIf="ratingFormCtrl.valid" class="text-success">Thanks!</div>
-              <div *ngIf="ratingFormCtrl.invalid" class="text-danger">Please rate {{model.lastName}}</div>
+              <div *ngIf="ratingFormCtrl.valid" class="text-success">{{ 'model.thanks' | translate }}</div>
+              <div *ngIf="ratingFormCtrl.invalid" class="text-danger">{{ 'model.please_rate' | translate }} {{model.lastName}}</div>
             </div>
-             <span>(Choose Rating) {{ratingFormCtrl.value}}</span>
+             <span>({{ 'model.choose_rating' | translate }}) {{ratingFormCtrl.value}}</span>
         </div>
-        <button type="button"  [disabled]="f.content.errors?true:false"  (click)="onSubmit()" class="btn btn-danger">Submit</button>
+        <button type="button"  [disabled]="f.content.errors?true:false"  (click)="onSubmit()" class="btn btn-danger">{{ 'register.submit' | translate }}</button>
     </form>
 </div>

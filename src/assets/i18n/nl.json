@@ -309,7 +309,7 @@
       "great_audio":"Geweldige audiokwaliteit",
       "no_phone":"Geen telefoonkosten",
       "phone_internet":"Bellen en internetten",
-      "worldwide ":"Wereldwijd toegankelijk",
+      "worldwide":"Wereldwijd toegankelijk",
       "your_privacy":"Uw privacy is belangrijk!",
       "privacy_detail":"we hechten veel waarde aan uw privacy. Al onze telefoontjes worden in alle discretie behandeld. Om uw privacy te beschermen, worden afschrijvingen veilig verwerkt en verschijnen ze discreet als Verotel*vtsup.com of Epoch.com op uw creditcardafschrift. Er wordt geen melding gemaakt van telefoonseks of een term die verband houdt met volwassenen.",
       "at":"Bij",
@@ -317,7 +317,13 @@
       "specialities":"Specialiteiten",
       "we_are_callers":"Wat andere bellers over mij zeiden",
       "see_all_reviews":"Bekijk alle beoordelingen",
-      "available_operators":"Beschikbare operators"
+      "available_operators":"Beschikbare operators",
+      "age":"Leeftijd",
+      "review_ratings":"Review & Beoordeling",
+      "add_comment":"Voeg een reactie toe",
+      "thanks":"Bedankt!",
+      "choose_rating":"Kies Beoordeling",
+      "please_rate":"Beoordeel a.u.b."
    }
    
  }

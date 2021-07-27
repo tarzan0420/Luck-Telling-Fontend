@@ -11,7 +11,7 @@
         <button *ngIf="!model.isCalling && !model.doNotDisturb" (click)="call()" class="btn btn-success"><i
             class="fa fa-volume-control-phone"></i> {{ 'model.call_me' | translate }}</button>
         <button *ngIf="model.isCalling || model.doNotDisturb" (click)="call()" class="btn btn-dangery btn-block"><i
-            class="fa fa-volume-up"></i> Clairvoyant Is Busy</button>
+            class="fa fa-volume-up"></i> {{ 'model.busy' | translate }}</button>
       </div>
     </div>
     <div class="detail-page">
@@ -46,7 +46,7 @@
 
               </div>
               <div class="Language-model">{{ 'home.model.language' | translate }} {{ model.languages |  uppercase }}</div>
-              <div class="city-model" *ngIf="model.location">City: {{ model.location?.city || ''}}</div>
+              <div class="city-model" *ngIf="model.location">{{ 'model.city' | translate }} {{ model.location?.city || ''}}</div>
               <div class="audio-detail">
                 <audio src="{{model.audioUrl}}" controls></audio>
               </div>

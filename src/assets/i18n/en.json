@@ -333,7 +333,7 @@
         "great_audio" : "Great Audio Quality",
         "no_phone"      : "No Phone Charges",
         "phone_internet"    : "Phone and Internet Calling",
-        "worldwide "        : "Worldwide Accessible",
+        "worldwide"        : "Worldwide Accessible",
         "your_privacy"      : "Your privacy is important!",
         "privacy_detail"    : "we value your privacy very much. All our calls will be handled with full discretion. To protect your privacy, charges will be processed securely and will appear discreetly as Verotel*vtsup.com or Epoch.com on your credit card statement. No mention of phone sex or any adult related term.",
         "at"                : "At ",
@@ -341,6 +341,12 @@
         "specialities"      : "Specialities",
         "we_are_callers"    : "What other callers said about me",
         "see_all_reviews"   : "See All Reviews",
-        "available_operators" : "Available operators"
+        "available_operators" : "Available operators",
+        "age"               : "Age",
+        "review_ratings"    : "Review & Rating",
+        "add_comment"       : "Add a comment",
+        "thanks"            : "Thanks!",
+        "choose_rating"     : "Choose Rating",
+        "please_rate"       : "Please rate"
     }
 }

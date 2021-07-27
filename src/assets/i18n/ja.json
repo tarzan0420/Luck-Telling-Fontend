@@ -309,7 +309,7 @@
       "great_audio":"優れたオーディオ品質",
       "no_phone":"電話料金なし",
       "phone_internet":"電話とインターネット通話",
-      "worldwide ":"世界中でアクセス可能",
+      "worldwide":"世界中でアクセス可能",
       "your_privacy":"あなたのプライバシーは重要です！",
       "privacy_detail":"私たちはあなたのプライバシーを非常に大切にしています。すべての通話は完全な裁量で処理されます。プライバシーを保護するために、請求は安全に処理され、クレジットカードの明細書にVerotel * vtsup.comまたはEpoch.comとして慎重に表示されます。電話セックスや成人関連の用語についての言及はありません。",
       "at":"で",
@@ -317,7 +317,13 @@
       "specialities":"特産品",
       "we_are_callers":"他の発信者が私について言ったこと",
       "see_all_reviews":"すべてのレビューを見る",
-      "available_operators":"利用可能な演算子"
+      "available_operators":"利用可能な演算子",
+      "age":"年",
+      "review_ratings":"レビューと評価",
+      "add_comment":"コメントを追加",
+      "thanks":"ありがとう！",
+      "choose_rating":"評価を選択",
+      "please_rate":"評価してください"
    }
       
  }

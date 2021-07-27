@@ -310,7 +310,7 @@
       "great_audio":"Gran calidad de audio",
       "no_phone":"Sin cargos telefónicos",
       "phone_internet":"Llamadas telefónicas e Internet",
-      "worldwide ":"Accesible en todo el mundo",
+      "worldwide":"Accesible en todo el mundo",
       "your_privacy":"¡Tu privacidad es importante!",
       "privacy_detail":"valoramos mucho su privacidad. Todas nuestras llamadas serán atendidas con total discreción. Para proteger su privacidad, los cargos se procesarán de forma segura y aparecerán discretamente como Verotel * vtsup.com o Epoch.com en el extracto de su tarjeta de crédito. No se menciona el sexo telefónico ni ningún término relacionado con los adultos.",
       "at":"A",
@@ -318,7 +318,13 @@
       "specialities":"Especialidades",
       "we_are_callers":"¿Qué dijeron otras personas sobre mí?",
       "see_all_reviews":"Ver todas las reseñas",
-      "available_operators":"Operadores disponibles"
+      "available_operators":"Operadores disponibles",
+      "age":"Edad",
+      "review_ratings":"Revisión y calificación",
+      "add_comment":"Añadir un comentario",
+      "thanks":"¡Gracias!",
+      "choose_rating":"Elegir calificación",
+      "please_rate":"Por favor, valora"
    }
       
  }
