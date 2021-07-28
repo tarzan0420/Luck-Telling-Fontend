@@ -174,8 +174,10 @@
         <form [formGroup]="fileFormGroup">
           <div class="example-full-width">
             <mat-label>{{ 'register.audio_file' | translate }}</mat-label>
+            <input type="button" onclick="document.getElementById('audio_file').click()" 
+            value="{{ 'howtocall.click_here' | translate }}" />
             <input formControlName="audioCtrl" type="file" name="image" (change)="fileProgress($event)"
-              accept="audio/*">
+              accept="audio/*" style="display:none;" id="audio_file">
             <mat-error *ngIf="!checkFileSize()">
               {{ 'register.file_max_error' | translate }}
             </mat-error>
@@ -366,9 +368,11 @@
         <ng-template matStepLabel>{{ 'register.upload_file' | translate }}</ng-template>
         <form [formGroup]="fileFormGroup">
           <div class="example-full-width">
-            <mat-label>Audio file</mat-label>
+            <mat-label>{{ 'register.audio_file' | translate }}</mat-label>
+            <input type="button" onclick="document.getElementById('audio_file').click()" 
+            value="{{ 'howtocall.click_here' | translate }}" />
             <input formControlName="audioCtrl" type="file" name="image" (change)="fileProgress($event)"
-              accept="audio/*">
+              accept="audio/*" style="display:none;" id="audio_file">
             <mat-error *ngIf="!checkFileSize()">
               {{ 'register.file_max_error' | translate }}
             </mat-error>

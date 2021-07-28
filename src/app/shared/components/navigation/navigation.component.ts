@@ -38,6 +38,9 @@ export class NavigationComponent implements OnInit {
   countryCodes = ['us', 'kw', 'de', 'es', 'fr', 'il', 'it', 'jp', 'nl', 'pt', 'ru', 'tr', 'pk', 'cn'];
 
   changeSelectedCountryCode(value: string): void {
+
+    localStorage.setItem('countryCode', value);
+
     let selectedLanguageCode = 'en';
     switch(value){
       case 'us' : selectedLanguageCode = 'en'; break;
@@ -49,7 +52,6 @@ export class NavigationComponent implements OnInit {
       default : selectedLanguageCode = value; break;
     }
     this.translate.use(selectedLanguageCode);
-    console.log("selectedLanguageCode : ", selectedLanguageCode);
   }
   
   constructor(private authentication :AuthenticationService,
@@ -60,13 +62,29 @@ export class NavigationComponent implements OnInit {
       this.translate.addLangs(this.countryCodes);
       
       // Get Country Code
-      var countryCode = Intl.DateTimeFormat().resolvedOptions().locale.substr(0,2);
-      console.log("Country Code ", countryCode);
-      if (this.countryCodes.indexOf(countryCode) > -1) {
-        translate.setDefaultLang(countryCode);
+      // var countryCode = Intl.DateTimeFormat().resolvedOptions().locale.substr(0,2);
+      this.selectedCountryCode = localStorage.getItem('countryCode');
+      if(this.selectedCountryCode == null)
+        this.selectedCountryCode = 'en'
+
+      let selectedLanguageCode;
+        switch(this.selectedCountryCode){
+          case 'us' : selectedLanguageCode = 'en'; break;
+          case 'kw' : selectedLanguageCode = 'ar'; break;
+          case 'il' : selectedLanguageCode = 'he'; break;
+          case 'jp' : selectedLanguageCode = 'ja'; break;
+          case 'pk' : selectedLanguageCode = 'ur'; break;
+          case 'cn' : selectedLanguageCode = 'zh'; break;
+          default : selectedLanguageCode = this.selectedCountryCode; break;
+        }
+
+      if (this.countryCodes.indexOf(selectedLanguageCode) > -1) {
+        translate.setDefaultLang(selectedLanguageCode);
       } else {
         translate.setDefaultLang('en');  
       }
+      this.translate.use(selectedLanguageCode);
+
       // translate.use(countryCode);
       // translate.setDefaultLang('en');
 
