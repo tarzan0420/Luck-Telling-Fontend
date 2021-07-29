@@ -168,6 +168,22 @@ const routes: Routes = [
       path: 'how-to-call', 
       loadChildren: () => import('@/modules/how-to-call/how-to-call.module').then(m => m.HowToCallModule),
     },
+    { 
+      path: 'terms-and-conditions', 
+      loadChildren: () => import('@/modules/terms-and-conditions/terms-and-conditions.module').then(m => m.TermsAndConditionsModule),
+    },
+    { 
+      path: 'acceptable-use-policy', 
+      loadChildren: () => import('@/modules/acceptable-use-policy/acceptable-use-policy.module').then(m => m.AcceptableUsePolicyModule),
+    },
+    { 
+      path: 'record-keeping-compliance', 
+      loadChildren: () => import('@/modules/record-keeping-compliance/record-keeping-compliance.module').then(m => m.RecordKeepComplianceModule),
+    },
+    { 
+      path: 'faq', 
+      loadChildren: () => import('@/modules/faq/faq.module').then(m => m.FaqModule),
+    },
     { path: 'forgot-password', 
       loadChildren: '../_page/forget-password/forget-password.module#ForgetPasswordModule' },
     {
