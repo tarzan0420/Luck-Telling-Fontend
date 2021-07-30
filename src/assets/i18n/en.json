@@ -511,9 +511,121 @@
         "desc10" : "Monday – Friday 9am – 5pm (GMT)        "
     },
     "widgets" : {
+        "add_package": {
+            "works": "add-package works!"
+        },
+        "add_user": {
+            "title": "Enter new account",
+            "first_name": "First Name",
+            "first_name_required": "First Name is required",
+            "last_name": "Last Name",
+            "last_name_required": "Last Name is required",
+            "email": "Email",
+            "email_format": "The format of the email address isn't correct",
+            "email_required": "Email is requỉed",
+            "password": "Password",
+            "password_required": "Password is required",
+            "password_cha": "Password must be at least 6 characters",
+            "confirm_password": "Confirm Password",
+            "confirm_password_required": "Confirm Password is required",
+            "confirm_password_same": "Confirm Password must be same password",
+            "phone": "Phone",
+            "phone_invalid": "Phone number invalid",
+            "phone_required": "Phone number is required",
+            "register": "Register",
+            "cancel": "Cancel"
+        },
+        "card": {
+            "of_target": "of target"
+        },
+        "change_password": {
+            "title": "Change Passoword",
+            "password": "Password",
+            "pre_password": "Pre-password",
+            "not_match": "Passwords do not match",
+            "no_thanks": "No Thanks",
+            "submit": "Submit"
+        },
+        "confirm_modal": {
+            "confirm": "Confirm",
+            "no_thanks": "No Thanks",
+            "ok": "Ok"
+        },
+        "edit_ads": {
+            "file": "File",
+            "title": "Title",
+            "description": "Description",
+            "position": "Postion",
+            "header": "Header",
+            "footer": "Footer",
+            "save": "Save",
+            "close": "Close"
+        },
+        "edit_options": {
+            "confirm": "Confirm",
+            "name": "Name",
+            "no_thanks": "No Thanks",
+            "save": "Save"
+        },
+        "edit_packages": {
+            "name": "Name",
+            "price": "Price",
+            "token": "Token",
+            "flex_formid": "Flex FormId",
+            "description": "Description",
+            "save": "Save",
+            "close": "Close"
+        },
+        "edit_user": {
+            "save": "Save",
+            "image_dimension": "Please upload image of dimension of 350px * 450p",
+            "biography": "Biography",
+            "first_name": "Frist Name",
+            "last_name": "Last Name",
+            "email": "Email",
+            "gender": "Gender",
+            "man": "Man",
+            "woman": "Woman",
+            "other": "Other",
+            "orientation": "Orientation",
+            "orientation_required": "Orientation is required",
+            "age": "Age",
+            "age_range": "Age must be between 80 and 18",
+            "age_required": "Age is required",
+            "languages": "Languages",
+            "category": "Category",
+            "male": "Male",
+            "female": "Female",
+            "couples": "couples",
+            "about_me": "About me",
+            "interests": "Interests",
+            "specialities": "Specialities",
+            "contact": "Contact",
+            "base_city": "Base city",
+            "city": "City",
+            "city_required": "City is required",
+            "phone": "Phone Number",
+            "audio": "Audio",
+            "upload_file": "Upload File",
+            "audio_file": "Audio File",
+            "max_file_size": "Maximum file size 10Mb .File is required",
+            "submit": "Submit",
+            "tokens": "Tokens",
+            "token": "Token"
+        },
+        "rating_call": {
+            "title": "Rating Call",
+            "rate_call": "Please rate this call",
+            "thanks": "Thanks!",
+            "choose_rating": "Choose Rating",
+            "no_thanks": "No Thanks",
+            "submit": "Submit"
+        },
         "upload_audio" : {
             "file_req" : "File is required",
-            "max_size" : "Maximum file size 10Mb "            
+            "max_size" : "Maximum file size 10Mb",
+            "upload_file" : "Upload File",
+            "audio_file" : "Audio file",
         },
         "bbb" : {
             "ccc"   : "Offline",

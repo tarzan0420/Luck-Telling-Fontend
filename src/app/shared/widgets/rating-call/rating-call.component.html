@@ -1,5 +1,5 @@
 <div class="rating-form">
-    <h2>Rating Call</h2>
+    <h2>{{'widgets.rating_call.title' | translate}}</h2>
     <form [formGroup]="reviewForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
             <ng-template #t let-fill="fill">
@@ -11,12 +11,12 @@
                
             </ngb-rating>
             <div class="form-text small">
-              <div *ngIf="ratingFormCtrl.valid" class="text-success">Thanks!</div>
-              <div *ngIf="ratingFormCtrl.errors?.required" class="text-danger">Please rate this call</div>
+              <div *ngIf="ratingFormCtrl.valid" class="text-success">{{'widgets.rating_call.thanks' | translate}}</div>
+              <div *ngIf="ratingFormCtrl.errors?.required" class="text-danger">{{'widgets.rating_call.rate_call' | translate}}</div>
             </div>
-             <span>(Choose Rating) {{ratingFormCtrl.value}}</span>
+             <span>({{'widgets.rating_call.choose_rating' | translate}}) {{ratingFormCtrl.value}}</span>
         </div>
-        <button mat-raised-button  (click)="onNoClick()">No Thanks</button>
-        <button  mat-raised-button color="accent"  [disabled]="loading"  >Submit</button>
+        <button mat-raised-button  (click)="onNoClick()">{{'widgets.rating_call.no_thanks' | translate}}</button>
+        <button  mat-raised-button color="accent"  [disabled]="loading"  >{{'widgets.rating_call.submit' | translate}}</button>
     </form>
 </div>

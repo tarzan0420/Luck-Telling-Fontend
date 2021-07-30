@@ -1,13 +1,13 @@
-<h1 mat-dialog-title>Confirm </h1>
+<h1 mat-dialog-title>{{'widgets.edit_options.confirm' | translate}} </h1>
 <div mat-dialog-content>
   <h5 class="text-center text-bold">{{options.option_name}}</h5>
   <mat-form-field class="payment-full-width">
-    <mat-label> Name</mat-label>
+    <mat-label> {{'widgets.edit_options.name' | translate}}</mat-label>
     <input matInput type="text" name="option_value" id="" [(ngModel)]="options.option_value">
   </mat-form-field>
 </div>
 
 <div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">No Thanks</button>
-  <button mat-button (click)="onSubmit()" [mat-dialog-close]="true" cdkFocusInitial>Save</button>
+  <button mat-button (click)="onNoClick()">{{'widgets.edit_options.no_thanks' | translate}}</button>
+  <button mat-button (click)="onSubmit()" [mat-dialog-close]="true" cdkFocusInitial>{{'widgets.edit_options.save' | translate}}</button>
 </div>  

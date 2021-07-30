@@ -5,27 +5,27 @@
       <div class="">
         <div class="payment-form">
           <div class="payment-full-width">
-              <mat-label> File</mat-label>
+              <mat-label> {{'widgets.edit_ads.file' | translate}}</mat-label>
               <p class="alert alert-warning" *ngIf="message">{{message}}</p>
               <img   src="{{previewUrl}}" alt="" style="max-width: 100%;max-height: 200px ;">
               <input class="btn btn-danger btn-block upload-btn" type="file" name="image" (change)="fileProgress($event)" accept="image/x-png,image/gif,image/jpeg">
           </div>
           <div class="row">
             <mat-form-field class="col-sm-6">
-              <mat-label> Title</mat-label>
+              <mat-label> {{'widgets.edit_ads.title' | translate}}</mat-label>
               <input matInput type="text" [(ngModel)]="ads.title">
             </mat-form-field>
             <mat-form-field class="col-sm-6">
-              <mat-label> Description</mat-label>
+              <mat-label> {{'widgets.edit_ads.description' | translate}}</mat-label>
               <input matInput type="text" [(ngModel)]="ads.description">
             </mat-form-field>
           </div>
           <div class="row">
             <mat-form-field class="col-sm-6">
-                  <mat-label>Postion</mat-label>
+                  <mat-label>{{'widgets.edit_ads.position' | translate}}</mat-label>
                   <mat-select [(value)]="ads.postion">
-                    <mat-option value="top">Header</mat-option>
-                    <mat-option value="footer">Footer</mat-option>
+                    <mat-option value="top">{{'widgets.edit_ads.header' | translate}}</mat-option>
+                    <mat-option value="footer">{{'widgets.edit_ads.footer' | translate}}</mat-option>
                   </mat-select>
             </mat-form-field>
             <!-- <mat-form-field class="col-sm-6">
@@ -38,9 +38,9 @@
             </mat-form-field> -->
           </div>
             <button mat-raised-button  color="accent" (click)="onSubmit()"
-            ngclass="btn btn-danger btn-sm">Save</button>
+            ngclass="btn btn-danger btn-sm">{{'widgets.edit_ads.save' | translate}}</button>
             <button mat-raised-button  (click)="onCloseClick()"
-            ngclass="btn btn-danger btn-sm">Close</button>
+            ngclass="btn btn-danger btn-sm">{{'widgets.edit_ads.close' | translate}}</button>
       </div>
       </div>
   

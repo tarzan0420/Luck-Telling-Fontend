@@ -3,29 +3,29 @@
       <div class="mat-elevation-z8">
         <div class="payment-form">
           <mat-form-field class="payment-full-width">
-            <mat-label> Name</mat-label>
+            <mat-label> {{'widgets.edit_packages.name' | translate}}</mat-label>
             <input matInput type="text" [(ngModel)]="packageItem.name">
           </mat-form-field>
           <mat-form-field class="payment-full-width">
-            <mat-label> Price</mat-label>
+            <mat-label> {{'widgets.edit_packages.price' | translate}}</mat-label>
             <input matInput type="number" [(ngModel)]="packageItem.price">
           </mat-form-field>
           <mat-form-field class="payment-full-width">
-            <mat-label> Token</mat-label>
+            <mat-label> {{'widgets.edit_packages.token' | translate}}</mat-label>
             <input matInput type="number" [(ngModel)]="packageItem.token">
           </mat-form-field>
           <mat-form-field class="payment-full-width">
-              <mat-label>  Flex FormId </mat-label>
+              <mat-label> {{'widgets.edit_packages.flex_formid' | translate}} </mat-label>
               <input matInput type="text" [(ngModel)]="packageItem.flexformId">
           </mat-form-field>
           <mat-form-field class="payment-full-width">
-            <mat-label>  Description </mat-label>
+            <mat-label>  {{'widgets.edit_packages.description' | translate}} </mat-label>
             <input matInput type="text" [(ngModel)]="packageItem.description">
         </mat-form-field>
             <button mat-raised-button  color="accent" (click)="onSubmit()"
-            ngclass="btn btn-danger btn-sm">Save</button>
+            ngclass="btn btn-danger btn-sm">{{'widgets.edit_packages.save' | translate}}</button>
             <button mat-raised-button  (click)="onCloseClick()"
-            ngclass="btn btn-danger btn-sm">Close</button>
+            ngclass="btn btn-danger btn-sm">{{'widgets.edit_packages.close' | translate}}</button>
       </div>
       </div>
   
