@@ -14,7 +14,7 @@
             <button (click)="createTwilioPhone()"></button>
           </ng-template> -->
           <div class="pull-right">
-            <button mat-raised-button [mat-dialog-close]="user" color="accent" (click)="onSubmit()" ngclass="btn btn-danger btn-sm">Save</button>
+            <button mat-raised-button [mat-dialog-close]="user" color="accent" (click)="onSubmit()" ngclass="btn btn-danger btn-sm">{{'widgets.edit_user.save' | translate}}</button>
           </div>
         </div>
       </div>
@@ -34,20 +34,20 @@
                 <audio src="{{user.audioUrl}}" controls ></audio>
               </div>
               <input class="btn btn-danger btn-block upload-btn" type="file" name="image"  accept="image/x-png,image/gif,image/jpeg" (change)="fileProgress($event,'avatar')">
-              <p class="alert alert-warnin">* Please upload image of dimension of 350px * 450p</p>
+              <p class="alert alert-warnin">* {{'widgets.edit_user.image_dimension' | translate}}</p>
             </div>
             <div class="col-sm-8">
               <div class="title-1">
-                <h3>Biography</h3>
+                <h3>{{'widgets.edit_user.biography' | translate}}</h3>
               </div>
               <div class="content-1">
                 <div class="row form-edit">
                   <div class="col-sm-6">
                     <div class="form-group row">
-                     <label class="col-sm-5">Frist Name</label>
+                     <label class="col-sm-5">{{'widgets.edit_user.first_name' | translate}}</label>
                      <div class="col-sm-7 phone-flat">
                        <mat-form-field appearance="fill"  class="full-width " style="width: 100%;">
-                         <mat-label>First Name</mat-label>
+                         <mat-label>{{'widgets.edit_user.first_name' | translate}}</mat-label>
                           <input matInput [formControl]="firstNameFormControl" [errorStateMatcher]="matcher"
                                 placeholder="" [(ngModel)]="user.firstName">
                           
@@ -57,10 +57,10 @@
                  </div>
                  <div class="col-sm-6">
                   <div class="form-group row">
-                   <label class="col-sm-5">Last Name</label>
+                   <label class="col-sm-5">{{'widgets.edit_user.last_name' | translate}}</label>
                    <div class="col-sm-7 phone-flat">
                      <mat-form-field appearance="fill"  class="full-width " style="width: 100%;">
-                       <mat-label>Last Name</mat-label>
+                       <mat-label>{{'widgets.edit_user.last_name' | translate}}</mat-label>
                         <input matInput [formControl]="lastNameFormControl" [errorStateMatcher]="matcher"
                               placeholder="" [(ngModel)]="user.lastName">
                         
@@ -70,10 +70,10 @@
                </div>
                <div class="col-sm-6">
                 <div class="form-group row">
-                 <label class="col-sm-5">Email</label>
+                 <label class="col-sm-5">{{'widgets.edit_user.email' | translate}}</label>
                  <div class="col-sm-7 phone-flat">
                    <mat-form-field appearance="fill"  class="full-width " style="width: 100%;">
-                     <mat-label>Email</mat-label>
+                     <mat-label>{{'widgets.edit_user.email' | translate}}</mat-label>
                       <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
                             placeholder="" [(ngModel)]="user.email">
                       
@@ -83,14 +83,17 @@
              </div>
                   <div class="col-sm-6">
                     <div class="form-group row">
-                      <label class="col-sm-5">Gender:</label>
+                      <label class="col-sm-5">{{'widgets.edit_user.gender' | translate}}:</label>
                       <div class="col-sm-7">
                         <mat-form-field appearance="fill">
-                          <mat-label>Gender</mat-label>
+                          <mat-label>{{'widgets.edit_user.gender' | translate}}</mat-label>
                         <mat-select [(value)]="user.gender"> 
-                          <mat-option *ngFor="let item of genders" [value]="item.value" >
+                          <!-- <mat-option *ngFor="let item of genders" [value]="item.value" >
                             {{ item.name }}
-                          </mat-option>
+                          </mat-option> -->
+                          <mat-option value="man" >{{'widgets.edit_user.man' | translate}}</mat-option>
+                          <mat-option value="woman" >{{'widgets.edit_user.woman' | translate}}</mat-option>
+                          <mat-option value="other" >{{'widgets.edit_user.other' | translate}}</mat-option>
                         </mat-select>
                         </mat-form-field>
                       </div>
@@ -98,14 +101,14 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group row">
-                      <label class="col-sm-5">Orientation:</label>
+                      <label class="col-sm-5">{{'widgets.edit_user.orientation' | translate}}:</label>
                       <div class="col-sm-7">
                         <mat-form-field class="example-full-width">
-                          <mat-label>Orientation</mat-label>
+                          <mat-label>{{'widgets.edit_user.orientation' | translate}}</mat-label>
                           <input matInput [formControl]="orientationFormControl" [errorStateMatcher]="matcher"
                                 placeholder="" [(ngModel)]="user.orientation">
                           <mat-error *ngIf="orientationFormControl.hasError('required')">
-                            Orientation is <strong>required</strong>
+                            {{'widgets.edit_user.orientation_required' | translate}}
                           </mat-error>
                         </mat-form-field>
                       </div>
@@ -113,18 +116,18 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group row">
-                      <label class="col-sm-5">Age:</label>
+                      <label class="col-sm-5">{{'widgets.edit_user.age' | translate}}:</label>
                       <div class="col-sm-7">
                         <mat-form-field class="example-full-width">
-                          <mat-label>Age</mat-label>
+                          <mat-label>{{'widgets.edit_user.age' | translate}}</mat-label>
                           <input type="number" matInput [formControl]="ageFormControl" [(ngModel)]="user.age"[errorStateMatcher]="matcher"
                                 placeholder="Ex. 18">
                           <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
                           <mat-error *ngIf="ageFormControl.hasError('min') && !ageFormControl.hasError('required')">
-                            Age must be between 80 and 18
+                            {{'widgets.edit_user.age_range' | translate}}
                           </mat-error>
                           <mat-error *ngIf="ageFormControl.hasError('required')">
-                            Age is <strong>required</strong>
+                            {{'widgets.edit_user.age_required' | translate}}
                           </mat-error>
                         </mat-form-field>
                       </div>
@@ -132,10 +135,10 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group row">
-                      <label class="col-sm-5">Languages:</label>
+                      <label class="col-sm-5">{{'widgets.edit_user.languages' | translate}}:</label>
                       <div class="col-sm-7">
                         <mat-form-field class="example-full-width">
-                          <mat-label>Languages</mat-label>
+                          <mat-label>{{'widgets.edit_user.languages' | translate}}</mat-label>
                           <input matInput [formControl]="languagesFormControl" [errorStateMatcher]="matcher"
                                 placeholder="Ex . ENGLISH, HINDI, JAPAN" [(ngModel)]="user.languages">
                         </mat-form-field>
@@ -144,14 +147,14 @@
                   </div>
                   <div class="col-sm-6">
                      <div class="form-group row">
-                      <label class="col-sm-5">Category</label>
+                      <label class="col-sm-5">{{'widgets.edit_user.category' | translate}}</label>
                       <div class="col-sm-7 phone-flat">
                         <mat-form-field appearance="fill"  class="full-width " style="width: 100%;">
-                          <mat-label>Category</mat-label>
+                          <mat-label>{{'widgets.edit_user.category' | translate}}</mat-label>
                           <mat-select [(value)]="user.category">
-                            <mat-option value="male">Male</mat-option>
-                            <mat-option value="female">Female</mat-option>
-                            <mat-option value="couples">couples</mat-option>
+                            <mat-option value="male">{{'widgets.edit_user.male' | translate}}</mat-option>
+                            <mat-option value="female">{{'widgets.edit_user.female' | translate}}</mat-option>
+                            <mat-option value="couples">{{'widgets.edit_user.couples' | translate}}</mat-option>
                           </mat-select>
                         </mat-form-field>
                         </div>
@@ -166,7 +169,7 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="title-1">
-                <h3>About me</h3>
+                <h3>{{'widgets.edit_user.about_me' | translate}}</h3>
                 <div class="pull-right">
                   <a  (click)="enableAbout()" class="edit edit-about" ><i class="fa fa-pencil"></i></a>
                 </div>
@@ -177,7 +180,7 @@
               </mat-form-field>
               </div>
               <div class="title-1">
-                <h3>Interests:</h3>
+                <h3>{{'widgets.edit_user.interests' | translate}}:</h3>
               
               </div>
               <div class="content-1">
@@ -186,7 +189,7 @@
               </mat-form-field>
               </div>
               <div class="title-1">
-                <h3>Specialities:</h3>
+                <h3>{{'widgets.edit_user.specialities' | translate}}:</h3>
               
               </div>
               <div class="content-1">
@@ -199,26 +202,26 @@
         </mat-tab>
         <mat-tab label="Contact">
           <div class="title-1">
-            <h3>Contact</h3>
+            <h3>{{'widgets.edit_user.contact' | translate}}</h3>
             <div class="pull-right">
               <a  (click)="enableAbout()" class="edit"><i class="fa fa-pencil"></i></a>
             </div>
           </div>
           <div class="content-1">
             <div class="form-group row">
-              <label class="col-sm-5">Base city:</label>
+              <label class="col-sm-5">{{'widgets.edit_user.base_city' | translate}}:</label>
               <div class="col-sm-7">
                 <mat-form-field class="example-full-width">
-                  <mat-label>City</mat-label>
+                  <mat-label>{{'widgets.edit_user.city' | translate}}</mat-label>
                   <input matInput [formControl]="cityFormControl" [(ngModel)]="user.location.city" [errorStateMatcher]="matcher" placeholder="Ex. Chicago IL"  >
                   <mat-error *ngIf="cityFormControl.hasError('required')">
-                    City is <strong>required</strong>
+                    {{'widgets.edit_user.city_required' | translate}}
                   </mat-error>
                 </mat-form-field>
               </div>
             </div>
               <div class="form-group row" *ngIf="user.role== 'clairvoyant'">
-                <label class="col-sm-5">Phone Number</label>
+                <label class="col-sm-5">{{'widgets.edit_user.phone' | translate}}</label>
                 <div class="col-sm-7 phone-flat">
                   <ngx-intl-tel-input
                   [inputId]="'adsasd'"
@@ -243,7 +246,7 @@
         </mat-tab>
         <mat-tab label="Audio" *ngIf="user?.role=='clairvoyant'">
           <div class="title-1">
-            <h3>Audio</h3>
+            <h3>{{'widgets.edit_user.audio' | translate}}</h3>
             <div class="pull-right">
               <a  (click)="enableAbout()" class="edit"><i class="fa fa-pencil"></i></a>
             </div>
@@ -256,17 +259,17 @@
               </div> -->
               <div class="col-sm-12">
                 <form [formGroup]="fileFormGroup">
-                  <ng-template matStepLabel>Upload File</ng-template>
+                  <ng-template matStepLabel>{{'widgets.edit_user.upload_file' | translate}}</ng-template>
                   <div class="example-full-width">
-                    <mat-label>Audio file</mat-label>
+                    <mat-label>{{'widgets.edit_user.audio_file' | translate}}</mat-label>
                     <input formControlName="audioCtrl" type="file"  (change)="fileProgress($event,'audio')"
                       accept="audio/*">
                     <mat-error *ngIf="!checkFileSize()">
-                      Maximum file size 10Mb .File is required
+                      {{'widgets.edit_user.max_file_size' | translate}}
                     </mat-error>
                   </div>
                   <div>
-                    <button mat-raised-button color="accent" (click)="uploadAudio()" >Submit</button>
+                    <button mat-raised-button color="accent" (click)="uploadAudio()" >{{'widgets.edit_user.submit' | translate}}</button>
                   </div>
                 </form>
               </div>
@@ -276,13 +279,13 @@
          </mat-tab>
          <mat-tab label="Tokens">
           <div class="title-1">
-            <h3>Tokens</h3>
+            <h3>{{'widgets.edit_user.tokens' | translate}}</h3>
           </div>
           <div class="content-1">
             <div class="form-group row">
               <div class="col-sm-12">
                 <form [formGroup]="tokenFormGroup">
-                  <ng-template matStepLabel>Token </ng-template>
+                  <ng-template matStepLabel>{{'widgets.edit_user.token' | translate}} </ng-template>
                   <div class="example-full-width">
                     <input matInput formControlName="tokenCtrl" type="number" [(ngModel)]="user.token">
                       

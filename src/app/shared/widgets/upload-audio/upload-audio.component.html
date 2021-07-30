@@ -1,9 +1,9 @@
 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" style="margin:auto">
     <div fxFlex="100"  >
         <form [formGroup]="audioFormGroup">
-            <ng-template matStepLabel>Upload File</ng-template>
+            <ng-template matStepLabel>{{'widgets.upload_audio.upload_file' | translate}}</ng-template>
             <div class="example-full-width">
-              <mat-label>Audio file</mat-label>
+              <mat-label>{{'widgets.upload_audio.audio_file' | translate}}</mat-label>
               <input  formControlName="audioCtrl" type="file" name="image" (change)="fileProgress($event)"
               accept="audio/*">
               <mat-error *ngIf="audioFormGroup.hasError('required')">

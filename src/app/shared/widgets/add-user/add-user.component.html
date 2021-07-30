@@ -1,52 +1,47 @@
-<h3>Enter new account</h3>
+<h3>{{'widgets.add_user.title' | translate}}</h3>
 <div class="row">
     <div class="col-sm-12">
         <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
             <div class="form-group">
-                <label for="firstName">First Name</label>
+                <label for="firstName">{{'widgets.add_user.first_name' | translate}}</label>
                 <input mat-input type="text" formControlName="firstName" [(ngModel)]="user.firstName"
                     class="form-control"
                     [ngClass]="{ 'is-invalid': submitted && registerForm.controls['firstName'].errors }" />
-                <mat-error *ngIf="registerForm.controls['firstName'].errors?.required && submitted">First Name is
-                    required</mat-error>
+                <mat-error *ngIf="registerForm.controls['firstName'].errors?.required && submitted">{{'widgets.add_user.first_name_required' | translate}}</mat-error>
             </div>
             <div class="form-group">
-                <label for="lastName">Last Name</label>
+                <label for="lastName">{{'widgets.add_user.last_name' | translate}}</label>
                 <input mat-input type="text" formControlName="lastName" [(ngModel)]="user.lastName" class="form-control"
                     [ngClass]="{ 'is-invalid': submitted && registerForm.controls['lastName'].errors }" />
-                <mat-error *ngIf="registerForm.controls['lastName'].errors?.required && submitted ">Last Name is
-                    required</mat-error>
+                <mat-error *ngIf="registerForm.controls['lastName'].errors?.required && submitted ">{{'widgets.add_user.last_name_required' | translate}}</mat-error>
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">{{'widgets.add_user.email' | translate}}</label>
                 <input mat-input type="text" formControlName="email" class="form-control" [(ngModel)]="user.email"
                     [ngClass]="{ 'is-invalid': submitted && registerForm.controls['email'].errors }" />
-                <mat-error *ngIf="registerForm.controls['email'].errors?.email && submitted">The format of the email
-                    address isn't correct</mat-error>
-                <mat-error *ngIf="registerForm.controls['email'].errors?.required && submitted">Email is requỉed
+                <mat-error *ngIf="registerForm.controls['email'].errors?.email && submitted">{{'widgets.add_user.email_format' | translate}}</mat-error>
+                <mat-error *ngIf="registerForm.controls['email'].errors?.required && submitted">{{'widgets.add_user.email_required' | translate}}
                 </mat-error>
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password">{{'widgets.add_user.password' | translate}}</label>
                 <input mat-input type="password" formControlName="password" class="form-control"
                     [(ngModel)]="user.password"
                     [ngClass]="{ 'is-invalid': submitted && registerForm.controls['password'].errors }" />
-                <mat-error *ngIf="registerForm.controls['password'].errors?.required && submitted">Password is required
+                <mat-error *ngIf="registerForm.controls['password'].errors?.required && submitted">{{'widgets.add_user.password_required' | translate}}
                 </mat-error>
-                <mat-error *ngIf="registerForm.controls['password'].errors?.minlength && submitted">Password must be at
-                    least 6 characters</mat-error>
+                <mat-error *ngIf="registerForm.controls['password'].errors?.minlength && submitted">{{'widgets.add_user.password_cha' | translate}}</mat-error>
             </div>
             <div class="form-group">
-                <label for="prePassword">Confirm Password</label>
+                <label for="prePassword">{{'widgets.add_user.confirm_password' | translate}}</label>
                 <input type="password" formControlName="prePassword" class="form-control"
                     [ngClass]="{ 'is-invalid': submitted && registerForm.controls['prePassword'].errors }" />
-                <mat-error *ngIf="registerForm.controls['prePassword'].errors?.required && submitted">Confirm Password
-                    is required</mat-error>
-                <mat-error *ngIf="registerForm.errors?.notSame && submitted">Confirm Password must be same password
+                <mat-error *ngIf="registerForm.controls['prePassword'].errors?.required && submitted">{{'widgets.add_user.confirm_password_required' | translate}}</mat-error>
+                <mat-error *ngIf="registerForm.errors?.notSame && submitted">{{'widgets.add_user.confirm_password_same' | translate}}
                 </mat-error>
             </div>
             <div class="form-group" *ngIf='data.role == "clairvoyant" '>
-                <label>Phone</label>
+                <label>{{'widgets.add_user.phone' | translate}}</label>
                 <div class="col-sm-7 phone-flat">
                     <ngx-intl-tel-input [inputId]="'adsasd'" [cssClass]="'custom'"
                         [preferredCountries]="preferredCountries" [enableAutoCountrySelect]="true"
@@ -56,18 +51,16 @@
                         [tooltipField]="TooltipLabel.Name" [phoneValidation]="true" [(ngModel)]="user.phone"
                         [separateDialCode]="separateDialCode" name="phone" formControlName="phoneFormControl">
                     </ngx-intl-tel-input>
-                    <mat-error *ngIf="registerForm.controls['phoneFormControl'].errors && submitted">Phone number
-                        invalid</mat-error>
-                    <mat-error *ngIf="registerForm.controls['phoneFormControl'].errors?.required && submitted">Phone
-                        number is required</mat-error>
+                    <mat-error *ngIf="registerForm.controls['phoneFormControl'].errors && submitted">{{'widgets.add_user.phone_invalid' | translate}}</mat-error>
+                    <mat-error *ngIf="registerForm.controls['phoneFormControl'].errors?.required && submitted">{{'widgets.add_user.phone_required' | translate}}</mat-error>
                 </div>
             </div>
             <div class="form-group">
                 <button [disabled]="loading" class="btn btn-primary">
                     <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
-                    Register
+                    {{'widgets.add_user.register' | translate}}
                 </button>
-                <a (click)="onCloseClick()" class="btn btn-link">Cancel</a>
+                <a (click)="onCloseClick()" class="btn btn-link">{{'widgets.add_user.cancel' | translate}}</a>
             </div>
         </form>
     </div>
