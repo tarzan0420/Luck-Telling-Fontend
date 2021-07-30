@@ -510,6 +510,39 @@
         "desc9" : "Business Hours:       ",
         "desc10" : "Monday – Friday 9am – 5pm (GMT)        "
     },
+    "widgets" : {
+        "upload_audio" : {
+            "file_req" : "File is required",
+            "max_size" : "Maximum file size 10Mb "            
+        },
+        "bbb" : {
+            "ccc"   : "Offline",
+            "ddd"  : "Language:",            
+            "online"    : "Online"
+        }
+    },
+    "static_page" : {
+        "title" : "Title" , 
+        "body" : "Body" , 
+        "save" : "Save" 
+    },
+    "side_bar" : {
+        "pages" : "Pages" , 
+        "dashboard" : "Dashboard" , 
+        "reviews" : "Reviews" , 
+        "clairvoyants" : "Clairvoyants" ,
+        "user" : "User" ,
+        "packages" : "Packages" ,
+        "opt" : "Options" ,
+        "page_conf" : "Page Config" ,
+        "seo_conf" : "Seo Config" ,
+        "withdraw" : "With Draw" ,
+        "static_page" : "Static Page" ,
+        "" : "Order" ,
+        "" : "Banner" ,
+        "" : "Pay out"  
+
+    },
 
     "faq" : {
         "title" : "Luck Telling Frequently Asked Questions        ",
@@ -560,4 +593,5 @@
         "gen_question4" : "What’s a safe Password to use?        ",
         "gen_answer4" : "Ideally one you have never used elsewhere; this lowers the risk of fraud. Also, the password should be at least 8 characters in length, including upper and lowercase letters along with numbers in order to make it as difficult as possible for someone to guess.        "
     }
+
 }

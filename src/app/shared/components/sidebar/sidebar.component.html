@@ -2,45 +2,45 @@
     <button mat-icon-button (click)="toggleSideBar()" class="float-right">
         <mat-icon>close</mat-icon>
     </button>
-    <h2 matSubheader>Pages</h2>
+    <h2 matSubheader>{{'side_bar.pages' | translate}}</h2>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">
-        <mat-icon aria-hidden="false" aria-label="home">home</mat-icon>Dashboard
+        <mat-icon aria-hidden="false" aria-label="home">home</mat-icon>{{'side_bar.dashboard' | translate}}
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/reviews">
-        <mat-icon> list_alt</mat-icon>Reviews
+        <mat-icon> list_alt</mat-icon>{{'side_bar.reviews' | translate}}
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/manager-model">
-        <mat-icon> person_pin</mat-icon>Clairvoyants
+        <mat-icon> person_pin</mat-icon>{{'side_bar.clairvoyants' | translate}}
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/manager-user">
-        <mat-icon>person</mat-icon> User
+        <mat-icon>person</mat-icon> {{'side_bar.user' | translate}}
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/packages">
-        <mat-icon> attach_money</mat-icon>Packages
+        <mat-icon> attach_money</mat-icon>{{'side_bar.packages' | translate}}
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/options">
-        <mat-icon> perm_data_setting</mat-icon>Options
+        <mat-icon> perm_data_setting</mat-icon>{{'side_bar.opt' | translate}}
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/page-config">
-        <mat-icon> settings</mat-icon>Page Config
+        <mat-icon> settings</mat-icon>{{'side_bar.page_conf' | translate}}
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/seo">
-        <mat-icon class="white-icon"> title</mat-icon> Seo Config
+        <mat-icon class="white-icon"> title</mat-icon>{{'side_bar.seo_conf' | translate}}
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/manager-withdraw">
-        <mat-icon> credit_card</mat-icon>With Draw
+        <mat-icon> credit_card</mat-icon>{{'side_bar.withdraw' | translate}}
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/static-page">
-        <mat-icon> how_to_vote</mat-icon>Static Page
+        <mat-icon> how_to_vote</mat-icon>{{'side_bar.static_page' | translate}}
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/order-manager">
-        <mat-icon>add_shopping_cart</mat-icon>Order
+        <mat-icon>add_shopping_cart</mat-icon>{{'side_bar.order' | translate}}
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/ads">
-        <mat-icon>image</mat-icon>Banner
+        <mat-icon>image</mat-icon>{{'side_bar.banner' | translate}}
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/payout">
-        <mat-icon>payment</mat-icon>Pay out
+        <mat-icon>payment</mat-icon>{{'side_bar.pay_out' | translate}}
     </a>
     <mat-divider></mat-divider>
 </mat-nav-list>
