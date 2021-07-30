@@ -7,10 +7,10 @@
               <input  formControlName="audioCtrl" type="file" name="image" (change)="fileProgress($event)"
               accept="audio/*">
               <mat-error *ngIf="audioFormGroup.hasError('required')">
-                File is required
+                {{'widgets.upload_audio.file_req' | translate}}
               </mat-error> 
               <mat-error *ngIf="!checkFileSize()">
-                Maximum file size 10Mb 
+                {{'widgets.upload_audio.max_size' | translate}}
               </mat-error>
             </div>
             <div>
