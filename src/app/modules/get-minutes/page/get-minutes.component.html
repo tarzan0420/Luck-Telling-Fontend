@@ -3,8 +3,8 @@
     <div class="container">
     <div class="hea-top-main">
         <div class="thumbnail">
-            <a href="#">Home </a>  >  
-            <span>Get Minutes</span>
+            <a href="#">{{'get_minutes.home' | translate }} </a>  >  
+            <span>{{'get_minutes.get_minutes' | translate }}</span>
         </div>
         
     </div>
@@ -12,9 +12,9 @@
     <div class="row">
         <div class="col-md-12 col-lg-9">
             <ul class="step-minutes">
-                <li><span>Get</span> Minutes</li>
-                <li class="active"><span>Choose</span> Package</li>
-                <li><span>Choose</span> Payment Method</li>
+                <li><span>{{'get_minutes.get' | translate }}</span> {{'get_minutes.minutes' | translate }}</li>
+                <li class="active"><span>{{'get_minutes.minutes' | choose }}</span> {{'get_minutes.package' | translate }}</li>
+                <li><span>{{'get_minutes.choose' | translate }}</span> {{'get_minutes.payment_method' | translate }}</li>
             </ul>
             <!-- <p class="text-center">
                 » Anonymous, Safe and Secure<br>
@@ -27,14 +27,14 @@
                             <div class="top-package">
                                 <h2>{{topup.name}}<span>{{pageConfig?.currency}}{{getPrice(topup.price)}}</span></h2>
                                 
-                                <a *ngIf="user != null;else notUser"href="{{ccbillPath+topup.flexformId+'?user_id='+user.id+'&topupId='+topup._id}}" class="btn btn-danger-ouline">SELECT</a>
+                                <a *ngIf="user != null;else notUser"href="{{ccbillPath+topup.flexformId+'?user_id='+user.id+'&topupId='+topup._id}}" class="btn btn-danger-ouline">{{'get_minutes.select' | translate }}</a>
                                 <ng-template #notUser>
-                                    <a  [routerLink]="['/login']" class="btn btn-danger-ouline">SELECT</a>
+                                    <a  [routerLink]="['/login']" class="btn btn-danger-ouline">{{'get_minutes.select' | translate }}</a>
                                 </ng-template>
                             </div>
                             <div class="content-package" >
                                 <ul>
-                                    <li>{{getMinutes(topup.token ,pageConfig.price)}} Minutes</li>
+                                    <li>{{getMinutes(topup.token ,pageConfig.price)}} {{'get_minutes.minutes' | translate }}</li>
                                     <li><i class="fa fa-check"></i></li>
                                     <li><i class="fa fa-check"></i></li>
                                     <li><i class="fa fa-check"></i></li>
@@ -45,27 +45,27 @@
                             <div class="top-package">
                                 <h2>{{topup.name}}<span>{{pageConfig?.currency}}{{getPrice(topup.price)}}</span></h2>
                                 
-                                <a *ngIf="user != null;else notUser"href="{{ccbillPath+topup.flexformId+'?user_id='+user.id+'&topupId='+topup._id}}" class="btn btn-danger-ouline">SELECT</a>
+                                <a *ngIf="user != null;else notUser"href="{{ccbillPath+topup.flexformId+'?user_id='+user.id+'&topupId='+topup._id}}" class="btn btn-danger-ouline">{{'get_minutes.select' | translate }}</a>
                                 <ng-template #notUser>
-                                    <a  [routerLink]="['/login']" class="btn btn-danger-ouline">SELECT</a>
+                                    <a  [routerLink]="['/login']" class="btn btn-danger-ouline">{{'get_minutes.select' | translate }}</a>
                                 </ng-template>
                             </div>
                             <div class="content-package" >
                                 <ul>
-                                    <li >{{getMinutes(topup.token ,pageConfig.price)}} Minutes</li>
-                                    <li><span [style.padding-right]="'10px'">Phone</span><i class="fa fa-check"></i></li>
-                                    <li><span [style.padding-right]="'10px'">Website Calling</span><i class="fa fa-check"></i></li>
-                                    <li><span [style.padding-right]="'10px'">Worldwide Accessible</span><i class="fa fa-check"></i></li>
+                                    <li >{{getMinutes(topup.token ,pageConfig.price)}} {{'get_minutes.minutes' | translate }}</li>
+                                    <li><span [style.padding-right]="'10px'">{{'get_minutes.phone' | translate }}</span><i class="fa fa-check"></i></li>
+                                    <li><span [style.padding-right]="'10px'">{{'get_minutes.website_calling' | translate }}</span><i class="fa fa-check"></i></li>
+                                    <li><span [style.padding-right]="'10px'">{{'get_minutes.worldwide_access' | translate }}</span><i class="fa fa-check"></i></li>
                                 </ul>
                             </div>
                         </div>
                     </li>
                 </ul>
                 <ul class="list-title-package lt-md_hidden">
-                    <li><span>Minutes</span></li>
-                    <li><span>Phone Calling</span></li>
-                    <li><span>Website Calling</span></li>
-                    <li><span>Worldwide Accessible</span></li>
+                    <li><span>{{'get_minutes.minutes' | translate }}</span></li>
+                    <li><span>{{'get_minutes.phone_calling' | translate }}</span></li>
+                    <li><span>{{'get_minutes.website_calling' | translate }}</span></li>
+                    <li><span>{{'get_minutes.worldwide_access' | translate }}</span></li>
                 </ul>
 
             </div>
@@ -73,26 +73,26 @@
         <div class="col-sm-5 col-lg-3 hide-mobile">
             <div class="box-pink">
                 <div class="head-box-pink">
-                    <i class="fa fa-question-circle"></i>  Why choose us?
+                    <i class="fa fa-question-circle"></i>  {{'get_minutes.why_choose' | translate }}
                 </div>
                 <div class="body-box-pink">
                     <ul class="list-1">
-                        <li><a href="#">Anonymous, Safe & Secure</a></li>
-                        <li><a href="#">Speak in Multiple Languages</a></li>
-                        <li><a href="#">Great Audio Quality</a></li>
-                        <li><a href="#">No Phone Charges</a></li>
-                        <li><a href="#">Phone and Internet Calling</a></li>
-                        <li><a href="#">Worldwide Accessible</a></li>
+                        <li><a href="#">{{'get_minutes.safe_secure' | translate }}</a></li>
+                        <li><a href="#">{{'get_minutes.speak_multi_lang' | translate }}</a></li>
+                        <li><a href="#">{{'get_minutes.great_audio_quality' | translate }}</a></li>
+                        <li><a href="#">{{'get_minutes.no_phone_charge' | translate }}</a></li>
+                        <li><a href="#">{{'get_minutes.phone_Internet_call' | translate }}</a></li>
+                        <li><a href="#">{{'get_minutes.worldwide_access' | translate }}</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="box-pink">
                 <div class="head-box-pink">
-                    <i class="fa fa-lock"></i>  Your privacy is important!
+                    <i class="fa fa-lock"></i>  {{'get_minutes.your_privacy' | translate }}
                 </div>
                 <div class="body-box-pink">
-                    <p>At <a href="{{homeUrl}}">{{title}}</a> we value your privacy very much. All our calls are handled with full discretion. To protect your privacy, charges are processed securely and will appear discreetly on your credit card statement. No mention of phone sex or any adult related term.</p>
+                    <p>At <a href="{{homeUrl}}">{{title}}</a> {{'get_minutes.your_privacy_description' | translate }}</p>
                     <img src="assets/images/ssl.png">
                 </div>
             </div>

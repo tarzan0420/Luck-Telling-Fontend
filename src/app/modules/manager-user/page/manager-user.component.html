@@ -1,4 +1,4 @@
-<h2 class="title-list text-center">User Manager </h2>
+<h2 class="title-list text-center">{{'manager_user.user_manager' | translate }} </h2>
 <br>
 <mat-divider></mat-divider>
 <br>
@@ -38,36 +38,36 @@
                 </ng-container>
                 <!-- Name Column -->
                 <ng-container matColumnDef="name" sticky>
-                    <mat-header-cell *matHeaderCellDef mat-sort-header >Name </mat-header-cell>
+                    <mat-header-cell *matHeaderCellDef mat-sort-header >{{'manager_user.name' | translate }} </mat-header-cell>
                     <mat-cell *matCellDef="let user" class='m-card-sub-title'> {{user.firstName}} {{user.lastName}} </mat-cell>
                 </ng-container>
 
                  <!--Email Column -->
                  <ng-container matColumnDef="email" sticky  >
-                    <mat-header-cell *matHeaderCellDef mat-sort-header   class="email-cell"> Email </mat-header-cell>
+                    <mat-header-cell *matHeaderCellDef mat-sort-header   class="email-cell"> {{'manager_user.email' | translate }} </mat-header-cell>
                     <mat-cell *matCellDef="let user"  class="m-card-title"> {{user.email}}</mat-cell>
                 </ng-container>
 
                 <!-- Role Column -->
                 <ng-container matColumnDef="role" sticky>
-                    <mat-header-cell *matHeaderCellDef > Role  </mat-header-cell>
+                    <mat-header-cell *matHeaderCellDef > {{'manager_user.role' | translate }}  </mat-header-cell>
                     <mat-cell *matCellDef="let user"> {{user.role}}</mat-cell>
                 </ng-container>
 
                 <!-- Status Column -->
                 <ng-container matColumnDef="status">
-                    <mat-header-cell *matHeaderCellDef mat-sort-header> Status  </mat-header-cell>
+                    <mat-header-cell *matHeaderCellDef mat-sort-header> {{'manager_user.status' | translate }}  </mat-header-cell>
                     <mat-cell *matCellDef="let user" class='m-card-sub-title' > {{user.status?'On':'Off'}} </mat-cell>
                 </ng-container>
 
                 <!-- Token Column -->
                 <ng-container matColumnDef="token">
-                    <mat-header-cell *matHeaderCellDef mat-sort-header> Tokens  </mat-header-cell>
+                    <mat-header-cell *matHeaderCellDef mat-sort-header> {{'manager_user.token' | translate }}  </mat-header-cell>
                     <mat-cell *matCellDef="let user" class='m-card-sub-title'> {{user.token}} </mat-cell>
                 </ng-container>
                 <!-- Action Column-->
                 <ng-container matColumnDef="actions" >
-                    <mat-header-cell  *matHeaderCellDef > Actions </mat-header-cell>
+                    <mat-header-cell  *matHeaderCellDef > {{'manager_user.actions' | translate }} </mat-header-cell>
                     <mat-cell *matCellDef="let user" fxLayout="row wrap" >
                         <button type="button" class="btn btn-primary" (click)="editUser(user.id)" color="primary"><i  class="fa fa-pencil"></i></button>
                         <button type="button" class="btn btn-danger" (click)="deleteUser(user.id)"><i  class="fa fa-trash"></i></button>

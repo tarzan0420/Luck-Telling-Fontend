@@ -1,4 +1,4 @@
-<h2 class="title-list text-center">Seo Config</h2>
+<h2 class="title-list text-center">{{'seo_config.seo_config' | translate}}</h2>
 <br>
 <mat-divider></mat-divider>
 <br>
@@ -11,19 +11,19 @@
         <mat-card class="example-card">
           <mat-card-content>
             <mat-form-field class="payment-full-width">
-              <mat-label> Title SEO</mat-label>
+              <mat-label> {{'seo_config.title_seo' | translate}}</mat-label>
               <input matInput type="text" [(ngModel)]="seoConfig.title">
             </mat-form-field>
             <mat-form-field class="payment-full-width">
-              <mat-label> Description SEO</mat-label>
+              <mat-label> {{'seo_config.description_seo' | translate}}</mat-label>
               <input matInput type="text" [(ngModel)]="seoConfig.description">
             </mat-form-field>
             <mat-form-field class="payment-full-width">
-              <mat-label> Keyword SEO</mat-label>
+              <mat-label> {{'seo_config.keyword_seo' | translate}}</mat-label>
               <input matInput type="text" [(ngModel)]="seoConfig.keyword">
             </mat-form-field>
             <button mat-raised-button  color="accent" (click)="onSubmit()" [disabled]="loading"
-                    ngclass="btn btn-danger btn-sm">Save</button>
+                    ngclass="btn btn-danger btn-sm">{{'seo_config.save' | translate}}</button>
           </mat-card-content>
 
         </mat-card>
