@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { SendWithdrawsComponent } from './page/send-withdraws.component';
 import {SendWithdrawsRoutingModule} from './send-withdraws-routing.module';
 import { SharedModule,ImportsMaterialModule} from '@/shared/shared.module';
-import {FormsModule,ReactiveFormsModule} from '@angular/forms';;
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [
   	SendWithdrawsComponent
@@ -14,7 +15,8 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';;
     ReactiveFormsModule,
     CommonModule,
     FormsModule,
-    SendWithdrawsRoutingModule
+    SendWithdrawsRoutingModule,
+    TranslateModule
   ]
 })
 

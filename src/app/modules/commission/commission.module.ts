@@ -4,7 +4,8 @@ import { CommissionComponent} from './page/commission.component';
 import { SharedModule,ImportsMaterialModule} from '@/shared/shared.module';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {PipeModule} from '@/_pipe/pipe/pipe.module';
-import { CommissionRoutingModule} from './commission-routing.module'
+import { CommissionRoutingModule} from './commission-routing.module';
+import {TranslateModule} from "@ngx-translate/core";
 @NgModule({
   declarations: [
   	CommissionComponent
@@ -16,7 +17,8 @@ import { CommissionRoutingModule} from './commission-routing.module'
     SharedModule,
     CommonModule,
     FormsModule,
-    CommissionRoutingModule
+    CommissionRoutingModule,
+    TranslateModule
   ]
 })
 

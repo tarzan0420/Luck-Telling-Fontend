@@ -5,6 +5,7 @@ import { SharedModule,ImportsMaterialModule} from '@/shared/shared.module';
 import {FormsModule} from '@angular/forms';
 import {PipeModule} from '@/_pipe/pipe/pipe.module';
 import { ReivewManagerRoutingModule} from './reivew-manage-routing.module'
+import {TranslateModule} from "@ngx-translate/core";
 @NgModule({
   declarations: [
   	ReivewManagerComponent
@@ -15,7 +16,8 @@ import { ReivewManagerRoutingModule} from './reivew-manage-routing.module'
     SharedModule,
     CommonModule,
     FormsModule,
-    ReivewManagerRoutingModule
+    ReivewManagerRoutingModule,
+    TranslateModule
   ]
 })
 

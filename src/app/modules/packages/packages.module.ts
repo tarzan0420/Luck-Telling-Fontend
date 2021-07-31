@@ -4,7 +4,8 @@ import { PackagesComponent} from './page/packages.component';
 import { SharedModule,ImportsMaterialModule} from '@/shared/shared.module';
 import {FormsModule} from '@angular/forms';
 import {PipeModule} from '@/_pipe/pipe/pipe.module';
-import { PackagesRoutingModule} from './packages-routing.module'
+import { PackagesRoutingModule} from './packages-routing.module';
+import {TranslateModule} from "@ngx-translate/core";
 @NgModule({
   declarations: [
   	PackagesComponent
@@ -15,7 +16,8 @@ import { PackagesRoutingModule} from './packages-routing.module'
     SharedModule,
     CommonModule,
     FormsModule,
-    PackagesRoutingModule
+    PackagesRoutingModule,
+    TranslateModule
   ]
 })
 export class PackagesModule { }
