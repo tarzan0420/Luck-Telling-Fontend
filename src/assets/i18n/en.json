@@ -625,7 +625,7 @@
             "file_req" : "File is required",
             "max_size" : "Maximum file size 10Mb",
             "upload_file" : "Upload File",
-            "audio_file" : "Audio file",
+            "audio_file" : "Audio file"
         },
         "bbb" : {
             "ccc"   : "Offline",
