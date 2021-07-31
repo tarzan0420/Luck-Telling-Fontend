@@ -11,7 +11,7 @@
                     <mat-menu #settings="matMenu">
                         <button mat-menu-item (click)="changePassword()">
                             <mat-icon >vpn_key</mat-icon>
-                            Change Password
+                            {{'components.header.change_password' | translate}}
                         </button>
                     </mat-menu>
                 </li>
@@ -28,7 +28,7 @@
                     <mat-menu #menu="matMenu">
                         <button mat-menu-item (click)="logout()">
                             <mat-icon >exit_to_app</mat-icon>
-                            Sign out
+                            {{'components.header.sign_out' | translate}}
                         </button>
                     </mat-menu>
                     
