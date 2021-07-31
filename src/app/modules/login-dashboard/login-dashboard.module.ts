@@ -5,7 +5,7 @@ import {LoginDashboardComponent} from './page/login-dashboard.component';
 import { SharedModule,ImportsMaterialModule} from '@/shared/shared.module';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {PipeModule} from '@/_pipe/pipe/pipe.module';
-
+import {TranslateModule} from "@ngx-translate/core";
 @NgModule({
   declarations: [
   	LoginDashboardComponent
@@ -17,7 +17,8 @@ import {PipeModule} from '@/_pipe/pipe/pipe.module';
     ReactiveFormsModule,
     CommonModule,
     FormsModule,
-    LoginDashboardRoutingModule
+    LoginDashboardRoutingModule,
+    TranslateModule
   ]
 })
 

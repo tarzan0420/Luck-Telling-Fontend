@@ -625,7 +625,7 @@
             "file_req" : "File is required",
             "max_size" : "Maximum file size 10Mb",
             "upload_file" : "Upload File",
-            "audio_file" : "Audio file",
+            "audio_file" : "Audio file"
         },
         "bbb" : {
             "ccc"   : "Offline",
@@ -691,10 +691,7 @@
         "page_conf" : "Page Config" ,
         "seo_conf" : "Seo Config" ,
         "withdraw" : "With Draw" ,
-        "static_page" : "Static Page" ,
-        "" : "Order" ,
-        "" : "Banner" ,
-        "" : "Pay out"  
+        "static_page" : "Static Page"
 
     },
 

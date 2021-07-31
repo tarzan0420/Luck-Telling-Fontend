@@ -6,6 +6,7 @@ import { DashboardComponent } from '@/modules/dashboard/dashboard.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '@/shared/shared.module';
 import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 import { MatFormFieldModule,
    MatInputModule,
    MatSidenavModule,
@@ -55,7 +56,8 @@ import { ManagerWithdrawComponent } from '../../modules/manager-withdraw/page/ma
     MatFormFieldModule,
     MatIconModule,
     MatOptionModule,
-    MatSelectModule
+    MatSelectModule,
+    TranslateModule
     ],
   providers: [
     DashboardService

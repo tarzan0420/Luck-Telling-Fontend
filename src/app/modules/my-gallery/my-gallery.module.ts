@@ -4,6 +4,7 @@ import { MyGalleryComponent} from './page/my-gallery.component';
 import { SharedModule,ImportsMaterialModule } from '@/shared/shared.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MyGalleryRoutingModule} from './my-gallery-routing.module';
+import {TranslateModule} from "@ngx-translate/core";
 import {} from '@angular/router'
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {} from '@angular/router'
     CommonModule,
     ImportsMaterialModule,
     SharedModule,
-    MyGalleryRoutingModule
+    MyGalleryRoutingModule,
+    TranslateModule
     
   ]
 })

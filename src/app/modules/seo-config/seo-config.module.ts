@@ -5,6 +5,7 @@ import {SeoConfigRoutingModule} from './seo-config-routing.module';
 import { SharedModule,ImportsMaterialModule} from '@/shared/shared.module';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {PipeModule} from '@/_pipe/pipe/pipe.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [SeoConfigComponent],
@@ -16,6 +17,7 @@ import {PipeModule} from '@/_pipe/pipe/pipe.module';
     ImportsMaterialModule,
 	  FormsModule,
     ReactiveFormsModule,
+    TranslateModule
   ]
 })
 export class SeoConfigModule { }

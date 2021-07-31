@@ -4,6 +4,8 @@ import { StaticPageComponent } from './static-page.component';
 import { StaticPageRoutingModule } from './static-page-routing.module';
 import { ReactiveFormsModule,FormsModule }    from '@angular/forms';
 import { CKEditorModule } from 'ngx-ckeditor';
+import { TranslateModule } from '@ngx-translate/core';
+
 import { MatFormFieldModule,
   MatInputModule,
   MatSidenavModule,
@@ -37,7 +39,8 @@ import { ManagerStaticPageComponent } from './manager-static-page/manager-static
     StaticPageRoutingModule,
 	  FormsModule,
     ReactiveFormsModule,
-    CKEditorModule
+    CKEditorModule,
+    TranslateModule
   ],
    providers: [
     

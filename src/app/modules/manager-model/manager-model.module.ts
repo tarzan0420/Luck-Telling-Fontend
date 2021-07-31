@@ -4,7 +4,8 @@ import { ManagerModelComponent} from './page/manager-model.component';
 import { SharedModule,ImportsMaterialModule} from '@/shared/shared.module';
 import {FormsModule} from '@angular/forms';
 import {PipeModule} from '@/_pipe/pipe/pipe.module';
-import { ManagerModelRoutingModule} from './manager-model-routing.module'
+import { ManagerModelRoutingModule} from './manager-model-routing.module';
+import {TranslateModule} from "@ngx-translate/core";
 @NgModule({
   declarations: [
   	ManagerModelComponent
@@ -15,7 +16,8 @@ import { ManagerModelRoutingModule} from './manager-model-routing.module'
     SharedModule,
     CommonModule,
     FormsModule,
-    ManagerModelRoutingModule
+    ManagerModelRoutingModule,
+    TranslateModule
   ]
 })
 export class ManagerModelModule { }
