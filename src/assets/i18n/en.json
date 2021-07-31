@@ -625,7 +625,7 @@
             "file_req" : "File is required",
             "max_size" : "Maximum file size 10Mb",
             "upload_file" : "Upload File",
-            "audio_file" : "Audio file",
+            "audio_file" : "Audio file"
         },
         "bbb" : {
             "ccc"   : "Offline",
@@ -633,9 +633,45 @@
             "online"    : "Online"
         }
     },
+
     "components" : {
         "new_message_alert" : {
-            "new_message_from" : "You have a new message from"
+            "new_message" : "You have a new message from"
+        },
+
+        "footer_dashboard" : {
+            "all_right" : "All rights reserved 2020"
+        },
+
+        "header" : {
+            "change_password" : "Change Password",
+            "sign_out" : "Sign out"
+        },
+
+        "mobile_sidebar" : {
+            "home" : "Home",
+            "reviews" : "Reviews",
+            "clairvoyants" : "Clairvoyants",
+            "users" : "Users",
+            "package" : "Packages",
+            "options" : "Options",
+            "page_config" : "Page Config",
+            "withdraw" : "Withdraw",
+            "static_page" : "Static Page",
+            "seo" : "Seo",
+            "order" : "Order",
+            "banner" : "Banner",
+            "payout" : "Payout"
+        },
+
+        "model_of_week" : {
+            "model" : "Model",
+            "of_week" : "of the Week",
+            "christabel_evan" : "Christabel EVAN",
+            "tt_age" : "22 Age",
+            "lang_eng_hin_ja" : "LANGUAGE: ENGLISH, HINDI, JAPAN",
+            "online" : "ONLINE",
+            "busy" : "BUSY"
         }
     },
 
