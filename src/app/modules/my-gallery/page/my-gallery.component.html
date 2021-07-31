@@ -3,7 +3,7 @@
   <div class="container">
     <div class="hea-top-main">
       <div class="thumbnail" *ngIf="user">
-        <a> HOME</a> >
+        <a> {{'my_gallery.home' | translate }}</a> >
         <a>{{ user.role}}</a> >
         <span>{{ user.getFullName() }}</span>
       </div>
@@ -23,10 +23,10 @@
             <div class="txt-model">
               <div class="title-model">
                 <h3><a href="#"> {{ user.firstName }} {{ user.lastName}} </a></h3>
-                <div *ngIf="user && user.age ; else notAge;" class="age-item">Age - {{user.age}}<span
+                <div *ngIf="user && user.age ; else notAge;" class="age-item">{{'my_gallery.age' | translate }} - {{user.age}}<span
                     [ngClass]="{'online':user.status,'offline':!user.status}" class="status"></span></div>
                 <ng-template #notAge>
-                  <div class="age-item">Age - {{user.age}}<span
+                  <div class="age-item">{{'my_gallery.age' | translate }} - {{user.age}}<span
                       [ngClass]="{'online':user.status,'offline':!user.status}" class="status"></span></div>
                 </ng-template>
               </div>
@@ -41,8 +41,8 @@
                 </ngb-rating>
 
               </div>
-              <div class="Language-model">LANGUAGE: {{ user.languages  }}</div>
-              <div class="city-model" *ngIf="user.location">City: {{ user.location?.city || ''}}</div>
+              <div class="Language-model">{{'my_gallery.language' | translate }}: {{ user.languages  }}</div>
+              <div class="city-model" *ngIf="user.location">{{'my_gallery.city' | translate }}: {{ user.location?.city || ''}}</div>
               <div class="audio-detail">
                 <audio src="{{user.audioUrl}}" controls></audio>
               </div>
@@ -56,7 +56,7 @@
         <div class="col-sm-7 col-md-8">
           <div class="box-detail">
             <div class="title-box-detail">
-              <i class="fa fa-info"></i> How I feel today
+              <i class="fa fa-info"></i> {{'my_gallery.how_feel' | translate }}
             </div>
             <div class="body-box-detail">
               <div class="row row-img-detail">
@@ -71,7 +71,7 @@
           </div>
           <div class="box-detail">
             <div class="title-box-detail">
-              <i class="fa fa-info"></i> New Images
+              <i class="fa fa-info"></i> {{'my_gallery.new_images' | translate }}
             </div>
             <div class="body-box-detail row" *ngIf="fileData ">
               <div class="col-sm-5">
@@ -81,22 +81,22 @@
               </div>
               <div class="col-sm-7">
                 <div class="preview-content">
-                  <h5> File Name : {{fileData.name}}</h5>
+                  <h5> {{'my_gallery.file_name' | translate }} : {{fileData.name}}</h5>
                   <br>
-                  <h5> Size : {{fileData.size}}</h5>
+                  <h5> {{'my_gallery.size' | translate }} : {{fileData.size}}</h5>
                   <br>
-                  <h5> Type : {{fileData.type}}</h5>
+                  <h5> {{'my_gallery.type' | translate }} : {{fileData.type}}</h5>
                   <br>
                 </div>
                 <br>
                 <button [disabled]="uploading" type="button" (click)="updateGallery()" class="btn btn-danger"
-                  mat-raised-button color="accent">Submit </button>
+                  mat-raised-button color="accent">{{'my_gallery.submit' | translate }} </button>
               </div>
             </div>
             <input class="btn btn-danger btn-block upload-btn" type="file" name="image" (change)="fileProgress($event)">
-            <p class="alert alert-warning">*Please upload image of dimension 250 x 250 px</p>
+            <p class="alert alert-warning">*{{'my_gallery.upload_image' | translate }}</p>
             <ng-template #unableUpload>
-              <p class="text-center alert alert-danger">Maximum number of Files :5</p>
+              <p class="text-center alert alert-danger">{{'my_gallery.maximum_number' | translate }}</p>
             </ng-template>
           </div>
         </div>

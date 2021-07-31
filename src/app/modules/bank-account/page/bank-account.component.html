@@ -26,7 +26,7 @@
         </div>
         <div class="col-sm-8">
           <div class="title-1">
-            <h3>Bank Account</h3>
+            <h3>{{'bank_account.bank_account' | translate }}</h3>
             <div class="pull-right">
               <button mat-raised-button color="accent" (click)="onSubmit()" ngclass="btn btn-danger btn-sm">Save</button>
             </div>
@@ -35,10 +35,10 @@
             <div class="row form-edit">
               <div class="col-sm-6">
                 <div class="form-group row">
-                  <label class="col-sm-5">Country:</label>
+                  <label class="col-sm-5">{{'bank_account.country' | translate }}:</label>
                   <div class="col-sm-7">
                     <mat-form-field appearance="fill">
-                      <mat-label>Country:</mat-label>
+                      <mat-label>{{'bank_account.country' | translate }}:</mat-label>
                       <mat-select  [(value)]="this.bankInfo.country"> 
                         <mat-option value="">Country...</mat-option>
                           <mat-option value="AF">Afghanistan</mat-option>
@@ -295,14 +295,14 @@
               </div>
               <div class="col-sm-6">
                 <div class="form-group row">
-                  <label class="col-sm-5">Account ID:</label>
+                  <label class="col-sm-5">{{'bank_account.account_no' | translate }}:</label>
                   <div class="col-sm-7">
                     <mat-form-field class="example-full-width">
-                      <mat-label>Account No.</mat-label>
+                      <mat-label>{{'bank_account.account_no' | translate }}.</mat-label>
                       <input matInput formControlName="accountNoControl" 
                             placeholder="" [(ngModel)]="bankInfo.accountNo">
                       <mat-error *ngIf="bankFormGroup.controls.accountNoControl.hasError('required')">
-                        Account No is <strong>required</strong>
+                        {{'bank_account.account_no_is' | translate }} <strong>{{'bank_account.required' | translate }}</strong>
                       </mat-error>
                     </mat-form-field>
                   </div>
@@ -310,14 +310,14 @@
               </div>
               <div class="col-sm-6">
                 <div class="form-group row">
-                  <label class="col-sm-5">Bank:</label>
+                  <label class="col-sm-5">{{'bank_account.bank' | translate }}:</label>
                   <div class="col-sm-7">
                     <mat-form-field class="example-full-width">
-                      <mat-label>Bank</mat-label>
+                      <mat-label>{{'bank_account.bank' | translate }}</mat-label>
                       <input type="text" matInput formControlName="bankControl" [(ngModel)]="bankInfo.nameBank">
                       <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
                       <mat-error *ngIf="bankFormGroup.controls.bankControl.hasError('required')">
-                        Bank is <strong>required</strong>
+                        {{'bank_account.bank_is' | translate }} <strong>{{'bank_account.required' | translate }}</strong>
                       </mat-error>
                     </mat-form-field>
                   </div>
@@ -325,10 +325,10 @@
                 </div>
               <div class="col-sm-6">
                 <div class="form-group row">
-                  <label class="col-sm-5">Name:</label>
+                  <label class="col-sm-5">{{'bank_account.name' | translate }}:</label>
                   <div class="col-sm-7">
                     <mat-form-field class="example-full-width">
-                      <mat-label>Name</mat-label>
+                      <mat-label>{{'bank_account.name' | translate }}</mat-label>
                       <input matInput formControlName="nameFormControl" 
                             placeholder="Account 1" [(ngModel)]="bankInfo.name">
                     </mat-form-field>
@@ -337,10 +337,10 @@
               </div>
               <div class="col-sm-6">
                 <div class="form-group row">
-                  <label class="col-sm-5">Routing Number:</label>
+                  <label class="col-sm-5">{{'bank_account.routing_number' | translate }}:</label>
                   <div class="col-sm-7">
                     <mat-form-field class="example-full-width">
-                      <mat-label>Routing Number</mat-label>
+                      <mat-label>{{'bank_account.routing_number' | translate }}</mat-label>
                       <input matInput formControlName="routingFormControl" 
                             placeholder="Routing Number" [(ngModel)]="bankInfo.routingNumber">
                     </mat-form-field>
@@ -349,10 +349,10 @@
               </div>
               <div class="col-sm-6">
                 <div class="form-group row">
-                  <label class="col-sm-5">SWIFT Code:</label>
+                  <label class="col-sm-5">{{'bank_account.swift_code' | translate }}:</label>
                   <div class="col-sm-7">
                     <mat-form-field class="example-full-width">
-                      <mat-label>SWIFT Code</mat-label>
+                      <mat-label>{{'bank_account.swift_code' | translate }}</mat-label>
                       <input matInput formControlName="swiftFormControl" 
                             placeholder="SWIFT Code" [(ngModel)]="bankInfo.swiftCode">
                     </mat-form-field>

@@ -592,6 +592,221 @@
         "gen_answer3" : "Charges will show discreetly on your card statement with no reference to anything of an adult nature.        ",
         "gen_question4" : "What’s a safe Password to use?        ",
         "gen_answer4" : "Ideally one you have never used elsewhere; this lowers the risk of fraud. Also, the password should be at least 8 characters in length, including upper and lowercase letters along with numbers in order to make it as difficult as possible for someone to guess.        "
+    },
+
+
+
+
+
+
+    "ads_manager": {
+        "main_title": "Ads Manager",
+        "title": "Title",
+        "type": "Type",
+        "position": "Position",
+        "preview": "Preview",
+        "status": "Status",
+        "actions": "Actions"
+    },
+
+    "bank_account": {
+        "bank_account": "Bank Account",
+        "country": "Country:",
+        "account_no": "Account No.",
+        "account_no_is": "Account No is",
+        "bank": "Bank",
+        "bank_is": "Bank is ",
+        "required": "required",
+        "name": "Name",
+        "routing_number": "Routing Number",
+        "swift_code": "SWIFT Code"
+    },
+
+    "commissions": {
+        "settings": "Settings",
+        "name": "Name",
+        "value": "Value",
+        "action": "Action"
+    },
+
+    "module_dashboard": {
+        "new_users": "New Users",
+        "total_clairvoyants": "Total Clairvoyants",
+        "total_review": "Total Review",
+        "total_withdraw": "Total WithDraw"
+    },
+
+    "get_minutes": {
+        "home": "Home",
+        "get_minutes": "Get Minutes",
+        "get": "Get",
+        "minutes": "Minutes",
+        "choose": "Choose",
+        "package": "Package",
+        "payment_method": "Payment Method",
+        "select": "SELECT",
+        "phone": "Phone",
+        "website_calling": "Website Calling",
+        "worldwide_access": "Worldwide Accessible",
+        "phone_calling": "Phone Calling",
+        "why_choose": "Why choose us?",
+        "safe_secure": "Anonymous, Safe & Secure",
+        "speak_multi_lang": "Speak in Multiple Languages",
+        "great_audio_quality": "Great Audio Quality",
+        "no_phone_charge": "No Phone Charges",
+        "phone_Internet_call": "Phone and Internet Calling",
+        "your_privacy": "Your privacy is important!",        
+        "your_privacy_description": "we value your privacy very much. All our calls are handled with full discretion. To protect your privacy, charges are processed securely and will appear discreetly on your credit card statement. No mention of phone sex or any adult related term."
+
+    },
+
+    "login_dashboard": {
+        "login": "Login",
+        "forget_password": "Forgot your password?"
+    },
+
+    "manager_model": {
+        "clairvoyant_manager": "Clairvoyant Manager",
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "status": "Status",
+        "available_token": "Available Tokens",
+        "token": "Token",
+        "actions": "Actions"
+    },
+
+    "manager_user": {
+        "user_manager": "User Manager",
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "status": "Status",
+        "token": "Token",
+        "actions": "Actions"
+    },
+
+    "manager_withdraw": {
+        "manager": "Manager withdraw",
+        "reject": "Reject",
+        "apporoved": "Approved",
+        "delete": "Delete",
+        "name": "Name",
+        "amount": "Amount",
+        "status": "Status",
+        "date": "Date",
+        "email": "Email",
+        "actions": "Actions"
+    },
+
+    "my_gallery": {
+        "home": "HOME",
+        "age": "Age",
+        "language": "LANGUAGE",
+        "city": "City",
+        "how_feel": "How I feel today",
+        "new_images": "New Images",
+        "file_name": "File Name",
+        "size": "Size",
+        "type": "Type",
+        "upload_image": "Please upload image of dimension 250 x 250 px",
+        "maximum_number": "Maximum number of Files :5",
+        "submit": "Submit"
+    },
+
+    "order_manager": {
+        "manager": "Order Manager",
+        "name": "Name",
+        "email": "Email",
+        "total": "Total",
+        "date": "Date",
+        "status": "Status"
+    },
+
+    "packages": {
+        "manager": "Manager Packages",
+        "add_package": "Add Package",
+        "name": "Name",
+        "price": "Price",
+        "token": "Token",
+        "flex_fromid": "Flex FormId",
+        "actions": "Actions"
+    },
+
+    "page_config" : {
+        "page_config": "Page Config",
+        "logo_upload": "Logo Upload",
+        "favicon_upload": "Favicon Upload",
+        "footer": "Footer",
+        "google_analytics": "Google Analytics",
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "twitter": "Twitter",
+        "number_token_per_minute": "Number of Tokens Per Minute",
+        "currency": "Currency",
+        "save": "Save"
+    },
+
+    "payouts" : {
+        "pay_out": "Pay out",
+        "name": "Name",
+        "email": "Email",
+        "total_earned": "Total Earned",
+        "paid_out": "Paid Out",
+        "pending": "Pending",
+        "commision": "Commission",
+        "actions": "Actions"
+    },
+
+    "response_reset_password" : {
+        "please_wait": "Please Wait",
+        "invalid_url": "Invalid URL.",
+        "set_new_password": "Set New Password",
+        "password_required1": "Password is required with atleast",
+        "password_required2": "characters",
+        "confirm_password": "Confirm Password does not match with password.",
+        "update_password": "Update\\nPassword"
+    },
+
+    "review_manager" : {
+        "manager": "Manager Review & Rating",
+        "from": "From",
+        "to": "To",
+        "rating": "Rating",
+        "content": "Content",
+        "date": "Date",
+        "actions": "Actions"
+    },
+
+    "send_withdraws" : {
+        "balance": "Balance",
+        "commission": "Commission",
+        "pending": "Pending",
+        "total_withdraw": "Total WithDraw",
+        "available_balance": "Available balance",
+        "amount_required": "Amount is required",
+        "add_withdraw": "Add withdraw",
+        "withdraws_history": "Withdraws History",
+        "date": "Date",
+        "status": "Status",
+        "amount": "Amount"
+    },
+
+    "seo_config" : {
+        "seo_config": "Seo Config",
+        "title_seo": "Title SEO",
+        "description_seo": "Description SEO",
+        "keyword_seo": "Keyword SEO",
+        "save": "Save"
+    },
+
+    "manager_static_page" : {
+        "static_page": "Static Page",
+        "add_page": "Add Page",
+        "title": "Title",
+        "content": "Content",
+        "date": "Date",
+        "action": "Actions"
     }
 
 }
