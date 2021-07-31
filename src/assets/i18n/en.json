@@ -633,6 +633,12 @@
             "online"    : "Online"
         }
     },
+    "components" : {
+        "new_message_alert" : {
+            "new_message_from" : "You have a new message from"
+        }
+    },
+
     "static_page" : {
         "title" : "Title" , 
         "body" : "Body" , 
@@ -649,11 +655,7 @@
         "page_conf" : "Page Config" ,
         "seo_conf" : "Seo Config" ,
         "withdraw" : "With Draw" ,
-        "static_page" : "Static Page" ,
-        "" : "Order" ,
-        "" : "Banner" ,
-        "" : "Pay out"  
-
+        "static_page" : "Static Page"
     },
 
     "faq" : {
